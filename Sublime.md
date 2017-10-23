@@ -77,15 +77,16 @@ Package Control是一个非常方便的扩展包管理扩展，在最新版中�
 
 以下为常用功能对应的快捷键（Windows平台和Mac平台有细微差异）,快捷键的使用是提高工作效率的关键，能用快捷键实现的功能，就不要点击鼠标，随着对编辑器的熟悉，这些快捷键就会慢慢掌握：
 
-* Ctrl+Shift+D 复制当前行
-* Ctrl+Shift+K 删除行
-* Ctrl+K，Ctrl+K 删除到行末
-* Ctrl+/  添加或取消注释
-* Ctrl+Enter  插入空行到下一行
-* Ctrl+Shift+Enter 插入空行到上一行
-* Alt+- 返回上次编辑点
-* Alt+Shift+- 跳转到编辑点
-* Ctrl+Shift+G 为当前内容添加起始和结束标签
+* `Ctrl+Shift+D` 复制当前行
+* `Ctrl+Shift+K` 删除行
+* `Ctrl+K，Ctrl+K` 删除到行末
+* `Ctrl+/`  添加或取消注释
+* `Ctrl+J` 连接行
+* `Ctrl+Enter`  插入空行到下一行
+* `Ctrl+Shift+Enter` 插入空行到上一行
+* `Alt+-` 返回上次编辑点
+* `Alt+Shift+-` 跳转到编辑点
+* `Ctrl+Shift+G` 为当前内容添加起始和结束标签
 
 ## 5. 常见问题
 
@@ -137,6 +138,7 @@ b. 点击菜单“首选项 → 按键绑定--用户”，打开快捷键配置�
 
 ## 6. 学习资源
 
+* [Sublime Text 非官方详细文档](https://docs.sublimetext.info/en/latest/index.html)
 * [Sublime Text 官方论坛](https://forum.sublimetext.com)
 * [Sublime Text 官方文档](http://www.sublimetext.com/support)
 * [慕课网——前端开发工具技巧介绍—Sublime篇](http://www.imooc.com/view/40)
