@@ -71,6 +71,8 @@ Package Control是一个非常方便的扩展包管理扩展，在最新版中�
 * **FTPsync** 使用ftp方式同步本地代码与远程代码。
 * **HTML-CSS-JS Prettify** 使用node.js（需要单独安装node.js）美化HTML, CSS, JavaScript 和 JSON 代码。
 * **Auto​PEP8** Python 语言自动排版美化插件。
+* **Meterial Theme** 一个漂亮有质感的界面。
+* **Terminal** 直接在编辑器中打开终端，并切换到项目目录，默认快捷键为`super+shift+t`。
 
 
 ## 4. 常用快捷键
