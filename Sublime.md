@@ -89,6 +89,7 @@ Package Control是一个非常方便的扩展包管理扩展，在最新版中�
 * `Alt+-` 返回上次编辑点
 * `Alt+Shift+-` 跳转到编辑点
 * `Ctrl+Shift+G` 为当前内容添加起始和结束标签
+* `Ctrl+alt+up` 与上一行交换顺序
 
 ## 5. 常见问题
 
