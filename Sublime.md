@@ -140,6 +140,10 @@ b. 点击菜单“首选项 → 按键绑定--用户”，打开快捷键配置�
 
 通过刚才的设定，当我们按下快捷键`Ctrl+K`后再按`Ctrl+B`就可以显示或隐藏状态栏。
 
+### 如何格式化vue文件
+
+Vue的组件后缀名为.vue，内容是html、css与js代码，使用`HTML/CSS/JS Prettify` 这个插件就行， 安装后 `tools->HTML/CSS/JS Prettify->set prettify preference` 在`"allowed_file_extensions": ["htm", "html", "xhtml", "shtml", "xml", "svg","vue"] `加上vue即可。
+
 ## 6. 学习资源
 
 * [Sublime Text 非官方详细文档](https://docs.sublimetext.info/en/latest/index.html)
