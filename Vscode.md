@@ -79,7 +79,7 @@ VSCode快捷键的定义，类似于ST，使用JSON格式，打开`首选项->�
 
 ## 实用插件
 
-1. markdownlint，Markdown语法检查及风格提示插件；
-1. Snippetica for Markdown，Markdown snippet，减少书写Markdown文件时键入量；
-1. Live Server，新建一个可以实时刷新的本地服务器，大大减少开发者的重复性动作，文件修改后，就可在页面中看到更新后的效果;
-1. ESLint，功能强大的js语法提示工具，减少js代码调试成本。
+1. **markdownlint**，Markdown语法检查及风格提示插件；
+1. **Snippetica for Markdown**，Markdown snippet，减少书写Markdown文件时键入量；
+1. **Live Server**，新建一个可以实时刷新的本地服务器，大大减少开发者的重复性动作，文件修改后，就可在页面中看到更新后的效果;
+1. **ESLint**，功能强大的js语法提示工具，减少js代码调试成本。

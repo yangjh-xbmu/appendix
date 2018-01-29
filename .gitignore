@@ -1,2 +1,5 @@
+*~
 _book
 .DS_Store
+*.sublime-project
+.vscode
