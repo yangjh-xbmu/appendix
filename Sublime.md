@@ -1,9 +1,7 @@
 # Sublime Text 编辑器的使用
 
 > 工欲善其事，必先利其器。
-
 > 节选自——孔子《论语·卫灵公》
-
 
 ## 1. 为什么选择 Sublime Text 编辑器
 
@@ -22,6 +20,7 @@
 从[Sublime Text官方网站](http://www.sublimetext.com)选择合适的安装版本，安装后需要进行必要的配置才能更高效地使用Sublime Text。
 
 ### 设置字体
+
 字体的选择，看起来无关紧要，但如果字体不合适，会给开发工作带来不必要的麻烦。字体的选择，第一个原则是近似字符的区分要清晰，比如`K`和`k`，\`和`'`。字体选择的另外一个因素就是中文支持。结合这两点，建议选择Consolas或者Ubuntu Mono字体。选择菜单“首选项 → 设置-用户”，打开用户配置文件，加入字体配置：
 
 ``` json
@@ -67,7 +66,7 @@ Package Control是一个非常方便的扩展包管理扩展，在最新版中�
 * **IMESupport** 解决Sublime Text中使用中文输入法时的光标跟随问题。
 * **Alignment** 按照“=”对齐多行，使代码显得更加整洁、可读性更强。
 * **DocBlockr** 非常便利的函数功能注释生成扩展，支持Javascript, PHP, CoffeeScript, Actionscript, C , C++ 等等。
-* **Emmet** 快速生成HTML、CSS代码的扩展包。该扩展包在书写HTML、CSS代码时可通过缩写提高效率，具体使用方法参见http://docs.emmet.io/。
+* **Emmet** 快速生成HTML、CSS代码的扩展包。该扩展包在书写HTML、CSS代码时可通过缩写提高效率，具体使用方法参见<http://docs.emmet.io/>。
 * **FTPsync** 使用ftp方式同步本地代码与远程代码。
 * **HTML-CSS-JS Prettify** 使用node.js（需要单独安装node.js）美化HTML, CSS, JavaScript 和 JSON 代码。
 * **Auto​PEP8** Python 语言自动排版美化插件。
@@ -142,7 +141,7 @@ b. 点击菜单“首选项 → 按键绑定--用户”，打开快捷键配置�
 
 ### 如何格式化vue文件
 
-Vue的组件后缀名为.vue，内容是html、css与js代码，使用`HTML/CSS/JS Prettify` 这个插件就行， 安装后 `tools->HTML/CSS/JS Prettify->set prettify preference` 在`"allowed_file_extensions": ["htm", "html", "xhtml", "shtml", "xml", "svg","vue"] `加上vue即可。
+Vue的组件后缀名为.vue，内容是html、css与js代码，使用`HTML/CSS/JS Prettify` 这个插件就行， 安装后 `tools->HTML/CSS/JS Prettify->set prettify preference` 在`"allowed_file_extensions": ["htm", "html", "xhtml", "shtml", "xml", "svg","vue"]`加上vue即可。
 
 ## 6. 学习资源
 
@@ -151,4 +150,3 @@ Vue的组件后缀名为.vue，内容是html、css与js代码，使用`HTML/CSS/
 * [Sublime Text 官方文档](http://www.sublimetext.com/support)
 * [慕课网——前端开发工具技巧介绍—Sublime篇](http://www.imooc.com/view/40)
 * [慕课网——快乐的sublime编辑器](http://www.imooc.com/view/333)
-
