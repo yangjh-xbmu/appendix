@@ -5,3 +5,4 @@
 1. [如何学习编程](Howtolearn.html)
 1. [如何使用Git工具](git.html)
 1. [如何使用Sublime Text 编辑器](Sublime.html)
+1. [Visual Studio Code编辑器的使用](Vscode.md)
