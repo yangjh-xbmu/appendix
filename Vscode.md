@@ -2,7 +2,7 @@
 
 ## VS Code的优势
 
-### 方面的插件安装及管理
+### 方便的插件安装及管理
 
 与Sublime Text（以下简称ST）编辑器相比，Visual Studio Code（以下简称VS Code）的主要优势在于插件安装的便利性，虽然在速度、内存占用等方面略输ST编辑器，但由于其是微软公司主导开发的开源软件，在生态建设方面、开发速度、更新速度等方面要好于由个人主导开发的ST编辑器，尤其是在插件商店安装的体验要好于ST编辑器。
 
@@ -81,6 +81,7 @@ VSCode快捷键的定义，类似于ST，使用JSON格式，打开`首选项->�
 
 1. **markdownlint**，Markdown语法检查及风格提示插件；
 1. **Snippetica for Markdown**，Markdown snippet，减少书写Markdown文件时键入量；
-1. **Live Server**，新建一个可以实时刷新的本地服务器，大大减少开发者的重复性动作，文件修改后，就可在页面中看到更新后的效果;
-1. **ESLint**，功能强大的js语法提示工具，减少js代码调试成本。
-1. **phpfmt**，按照PSR进行代码格式化的PHP工具，需要安装PHP7
+1. **Live Server**，新建一个可以实时刷新的本地服务器，大大减少开发者的重复性动作，文件修改后，就可在页面中看到更新后的效果；
+1. **ESLint**，功能强大的js语法提示工具，减少js代码调试成本；
+1. **phpfmt**，按照PSR进行代码格式化的PHP工具，需要安装PHP7；
+1. **phpcs**, 按照PSR规则进行语法提示，需要安装pear及CodeSniffer，并进行php.ini配置。
