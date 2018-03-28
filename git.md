@@ -214,6 +214,14 @@ git config user.email "xxx@163.com"
 ``` sh
 git config --list
 ```
+### 如何清除git缓存
+
+当我们修改了仓库密码时，由于git会缓存之前的密码，可能会出现授权错误，这是可以运行
+
+``` sh
+git credential-cache exit
+```
+来清除缓存。
 
 ### 忽略项目中的特定文件
 
