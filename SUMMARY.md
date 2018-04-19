@@ -5,5 +5,4 @@
 * [Git简明教程](git.md)
 * [Sublime Text的使用](Sublime.md)
 * [Visual Studio Code编辑器的使用](Vscode.md)
-
 * [参考文献](References.md)
