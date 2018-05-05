@@ -10,3 +10,4 @@ git commit -m $1
 git push -u origin pages
 git checkout master
 open http://yangjh.gitee.io/appendix
+open http://gitee.com/yangjh

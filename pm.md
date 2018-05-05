@@ -65,6 +65,20 @@ export PATH="/usr/local/bin:$PATH"
 |brew upgrade xxx|更新xxx软件|
 |brew search xxx|搜索xxx软件|
 
+### 安装cask扩展
+
+使用brew方式安装的大都是命令行界面的工具，如果需要使用Homebrew管理图形界面软件，则需要安装cask扩展：
+
+```sh
+brew tap caskroom/cask
+```
+
+这样，用户就可以使用命令行方式安装图形界面软件，例如：
+
+```sh
+brew cask install google-chrome
+```
+
 ### 常用软件
 
 ```sh
