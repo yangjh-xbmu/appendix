@@ -48,7 +48,7 @@ vagrant默认安装box的方式为：
 vagrant box add xx/xxx
 ```
 
-其中xx/xxx 就是box的名字，如果要使用vagrant提供的box，可从vagrantcloud站点进行搜索和下载。由于vagrant默认安装方式时的包存放在国外，直接下载速度很慢，因此我们可以先使用迅雷等下载工具，将其下载到本地后，在添加到vagrant系统中，例如：
+其中xx/xxx 就是box的名字，如果要使用vagrant提供的box，可从[vagrantcloud站点](https://app.vagrantup.com/boxes/search)进行搜索和下载。由于vagrant默认安装方式时的包存放在国外，直接下载速度可能很慢，因此我们可以先使用迅雷等下载工具，将其下载到本地后，在添加到vagrant系统中，例如：
 
 ```sh
 vagrant box add centos/7 centos7.box

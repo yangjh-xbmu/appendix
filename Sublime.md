@@ -3,7 +3,7 @@
 > 工欲善其事，必先利其器。
 > 节选自——孔子《论语·卫灵公》
 
-## 1. 为什么选择 Sublime Text 编辑器
+## 为什么选择 Sublime Text 编辑器
 
 作为开发人员，选择一款理想的文本编辑器，有助于工作效率的提高。实际上，有很多出色的文本编辑器供我们选择，比如Vim、Emacs、WebStorm、Dreamweaver、Notepad++、Sublime Text等等。我们之所以选择Sublime Text编辑器作为开发工具，主要是基于如下优点：
 
@@ -15,7 +15,7 @@
 * **扩展性良好** Sublime Text编辑器吸收了其它编辑器的优点，用户可对其进行定制和扩展，因此，涌现出能各种需求的扩展程序包，正是这些扩展程序包，使得Sublime Text编辑器和其它编辑器相比有了更多的吸引力。除由他人开发的控制包外，开发人员还可以自定义代码段，能够按照自己的需求自动完成代码，可大大提高编写效率。
 * **生态系统完善** 不同于其他编辑器需要用户自行寻找、自行安装扩展包的方式，Sublime Text编辑器的扩展包都统一在一个入口中，这使得用户能够非常方便地获取和更新扩展包，围绕着特定功能往往有多个扩展包可供选择，在[https://packagecontrol.io/](https://packagecontrol.io/)网站，用户可以通过对众多用户行为（使用、安装、卸载）的统计来对扩展包做出选择，借助于统一公开的插件入口和大多数人做出的选择，使得扩展包的开发存在着有序竞争，保障了Sublime Text编辑器的活力。
 
-## 2. 安装与配置
+## 安装与配置
 
 从[Sublime Text官方网站](http://www.sublimetext.com)选择合适的安装版本，安装后需要进行必要的配置才能更高效地使用Sublime Text。
 
@@ -59,7 +59,7 @@ Package Control是一个非常方便的扩展包管理扩展，在最新版中�
 * 选择 “Preference → Package Control → Install Package”，在对话框中键入`Chinese`，选择Chinese Localizition扩展包；
 * Package Control会自动从网站下载并安装Chinese Localizition扩展包，安装完成后即可看到中文菜单。
 
-## 3. 常用组件
+## 常用组件
 
 以下介绍一些常用、必要的扩展包：
 
@@ -74,7 +74,7 @@ Package Control是一个非常方便的扩展包管理扩展，在最新版中�
 * **Terminal** 直接在编辑器中打开终端，并切换到项目目录，默认快捷键为`super+shift+t`。
 
 
-## 4. 常用快捷键
+## 常用快捷键
 
 以下为常用功能对应的快捷键（Windows平台和Mac平台有细微差异）,快捷键的使用是提高工作效率的关键，能用快捷键实现的功能，就不要点击鼠标，随着对编辑器的熟悉，这些快捷键就会慢慢掌握：
 
@@ -91,7 +91,7 @@ Package Control是一个非常方便的扩展包管理扩展，在最新版中�
 * `Ctrl+alt+up` 与上一行交换顺序
 * `Ctrl+alt+l` 进入多行编辑模式
 
-## 5. 常见问题
+## 常见问题
 
 ### 如何自定制代码片段
 
@@ -149,7 +149,7 @@ Vue的组件后缀名为.vue，内容是html、css与js代码，使用`HTML/CSS/
 ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin
 ```
 
-## 6. 学习资源
+## 学习资源
 
 * [Sublime Text 非官方详细文档](https://docs.sublimetext.info/en/latest/index.html)
 * [Sublime Text 官方论坛](https://forum.sublimetext.com)
