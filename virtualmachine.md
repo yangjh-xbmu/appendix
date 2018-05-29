@@ -72,6 +72,52 @@ vagrant init centos/7
   config.vm.network "private_network", ip: "192.168.33.10"
 ```
 
+#### 设置共享目录
+
+默认情况下，vagrant会共享我们的项目目录，在项目的虚拟机里面，会有一个跟我们的项目的目录是同步的。但在某些情况下，这个默认共享目录无法使用。我们需要手工设置同步目录：
+
+先安装 vbguest 插件，用它可以为虚拟机安装 vbguest：
+
+```sh
+vagrant plugin install vbguest
+```
+
+然后创建项目目录，初始化虚拟机。
+
+```sh
+mkdir centos-7
+cd centos-7
+vagrant init centos/7
+```
+
+编辑配置文件，设置如下内容：
+
+```sh
+Vagrant.configure("2") do |config|
+  config.vm.box = "centos/7"
+  config.vm.network "private_network", ip: "192.168.33.10"
+  config.vm.network "public_network"
+  config.vm.synced_folder "data", "/vagrant_data"
+end
+```
+
+之后启动虚拟机：
+
+```sh
+vagrant up
+```
+
+先忽略启动错误信息，登录到虚拟机后更新、重启：
+
+```sh
+vagrant ssh
+sudo yum -y install kernel kernel-devel
+sudo yum update
+vagrant reload
+```
+
+至此，虚拟机与主机之间的共享目录可正常工作了。
+
 #### 启动虚拟机
 
 ```sh
