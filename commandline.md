@@ -6,7 +6,7 @@
 
 ### windows命令行工具
 
-Windows系统自带命令行工具cmd和powershell，但其界面过于简陋，且功能有限。开源项目cmder解决了在windows系统中使用命令行工具的一些痛点，建议使用，其官方地址为：<http://cmder.net/>,下载完全版，即可在windows系统中免安装使用和Linux、Macos类似的命令行工具。
+Windows系统自带命令行工具cmd和powershell，但其界面过于简陋，且功能有限。开源项目cmder解决了在windows系统中使用命令行工具的一些痛点，建议使用，其官方地址为：<http://cmder.net/>，下载完全版，即可在windows系统中免安装使用和Linux、Macos类似的命令行工具。
 
 ### MacOS命令行工具
 
@@ -120,9 +120,10 @@ vi 查看编辑文件内容，属于运行于命令行中的编辑器。
 
 按上下键可调用之前执行过的命令，从而节省键入时间。
 
-## 扩展阅读资料
-
-1. <http://linuxcommand.org/index.php>
 ### 强行退出
 
 使用快捷键`ctrl+c`可以强行退出正在执行的命令。
+
+## 扩展阅读资料
+
+1. <http://linuxcommand.org/index.php>
