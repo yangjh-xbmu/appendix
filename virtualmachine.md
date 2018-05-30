@@ -124,7 +124,6 @@ vagrant reload
 vagrant up
 ```
 
-
 #### 查看虚拟机状态
 
 ```sh

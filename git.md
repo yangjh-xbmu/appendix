@@ -1,4 +1,3 @@
-
 # Git简明教程
 
 > Always use source code control.---Andrew Hunt 程序员修炼之道
@@ -7,7 +6,7 @@
 
 本教程并不能使你成为Git工具的专家，很多高级命令并不涉及，如果想进一步学习，请阅读[《Pro Git》](http://git-scm.com/book/zh){{ "Scott-2009" | cite }}。
 
-## 为什么要用Git
+## Git简介
 
 ### 什么是版本控制
 
@@ -61,7 +60,7 @@ Git迅速成为最流行的分布式版本控制系统，尤其是2008年，GitH
 
 Mac OS 最近的版本中，已经内置了git工具，无需安装。
 
-Windows 上安装 Git 非常简单，可以到 [GitHub 的 msysGit 项目](http://msysgit.github.io/)下载 安装文件。完成安装之后，就可以使用命令行的 Git 工具（已经自带了 ssh 客户端）了，另外还有一个图形界面的 Git 项目管理工具。
+Windows 上安装 Git 非常简单，可以到 [GitHub 的 msysGit 项目](http://msysgit.github.io/)下载 安装文件。完成安装之后，就可以使用命令行的 Git 工具（已经自带了 ssh 客户端）了，另外还有一个图形界面的 Git 项目管理工具。此外，windows用户还可以安装cmder，cmder内置了git，建议使用cmder，更加接近于终端的体验。
 
 ## 用Git获取代码
 
@@ -174,24 +173,33 @@ GitHub 不仅能托管代码，还可以通过GitHub Pages工具免费建立静�
 171. 在Github站点注册帐号，邮箱验证激活。
 172. 创建仓库。在GitHub注册登陆后，创建以自己用户名开头的“username.github.io”的公开仓库，其中username必须和GitHub注册时的用户名一致，否则无法使用Github page服务。
 173. 克隆仓库。进入到想要存储项目的文件夹，执行如下命令克隆仓库：
+
 ```sh
 git clone https://github.com/username/username.github.io.git
 ```
+
 输入用户名、密码，完成克隆操作后，应该在文件夹生成“username.github.io”的子文件夹，之后个人站点的文件和操作都在该文件夹中完成。
+
 180. 创建首页。进入本地“username.github.io”文件夹，使用编辑器创建index.html，这个文件将是个人站点的首页。
 181. 提交代码到GitHub。完成页面编辑后，就可以发布代码到GitHub：
+
 ```sh
 git add --all
 git commit -m "Initial commit"
 git push -u origin master
 ```
+
 如果是首次运行git工具，还要进行全局性用户名和邮箱的声明：
+
 ```sh
 git config --global user.email "username@mail.com"
 git config --global user.name "username"
 ```
+
 上述操作完成后，本地仓库中的代码将推送到GitHub远程仓库。
+
 197. 浏览站点。启动浏览器，访问如下地址，即可浏览站点：
+
 ```sh
 http://username.github.io
 ```
@@ -204,28 +212,32 @@ http://username.github.io
 
 在有些情况下，我们创建的项目仓库，需要设置不同于全局性设置的用户信息，尤其是我们在不同的代码托管站点创建了多个仓库时，很有可能不同网站的用户信息是不一致的。怎样才能为不同仓库设置不同的用户信息，而不使用同一全局性信息呢？
 
-想使用全局配置或是某个项目需要单独配置 user.name 和 user.email：
-``` sh
+想使用全局配置或是某个项目需要单独配置 `user.name` 和 `user.email`：
+
+```sh
 git config user.name "xxx"
 git config user.email "xxx@163.com"
 ```
 
 查看Git配置信息，包括全局配置和项目当前配置，二者都有的情况下，Git优先使用项目当前配置：
-``` sh
+
+```sh
 git config --list
 ```
+
 ### 如何清除git缓存
 
 当我们修改了仓库密码时，由于git会缓存之前的密码，可能会出现授权错误，这是可以运行
 
-``` sh
+```sh
 git credential-cache exit
 ```
+
 来清除缓存。
 
 ### 忽略项目中的特定文件
 
-在项目中，总会有一些特定的文件不想采用Git工具进行版本的控制，如临时文件、编译时产生的过渡文件或包含帐号信息的文件，对于这类文件，Git提供了一个非常高效灵活的方式进行屏蔽，即创建一个.gitignore文件。
+在项目中，总会有一些特定的文件不想采用Git工具进行版本的控制，如临时文件、编译时产生的过渡文件或包含帐号信息的文件，对于这类文件，Git提供了一个非常高效灵活的方式进行屏蔽，即创建一个`.gitignore`文件。
 
 在这个文件中，项目拥有者只需将不想进入版本仓库的文件列举出来即可，支持通配符。例如：
 
@@ -238,7 +250,7 @@ git credential-cache exit
 test/*
 ```
 
-需要提醒的是，当.gitignore文件更改后，并不能立即起效，需要进行如下操作：
+需要提醒的是，当`.gitignore`文件更改后，并不能立即起效，需要进行如下操作：
 
 224. 清除缓存。命令为：
 ```sh
@@ -254,7 +266,7 @@ git add .
 
 有时候我们能从版本库中永久删除文件（如可执行文件、存有密码的文件等等），不留痕迹，不仅要让它在版本历史里看不出来，还要把它占用的空间也释放出来。执行如下操作：
 
-``` sh
+```sh
 git filter-branch --tree-filter 'rm -rf 要删除文件的完整路径' --tag-name-filter cat -- --all
 
 git push origin --tags --force
