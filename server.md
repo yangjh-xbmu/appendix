@@ -112,6 +112,28 @@ server {
 
 在phpMyAdmin官方网站下载压缩包，解压到合适目录，依照提示，进行必要的设置。
 
+### 安装nodejs
+
+```sh
+vagrant ssh
+sudo wget https://nodejs.org/dist/v8.11.2/node-v8.11.2-linux-x64.tar.xz
+sudo xz -d node-v8.11.2-linux-x64.tar.xz
+sudo tar xvf node-v8.11.2-linux-x64.tar
+sudo rm node-v8.11.2-linux-x64.tar
+sudo mv node-v8.11.2-linux-x64 node
+sudo vim /etc/profile
+```
+
+在`/etc/profile`中加入如下信息：
+
+```sh
+#set for nodejs
+export NODE_HOME=/usr/local/node
+export PATH=$NODE_HOME/bin:$PATH
+```
+
+重新登录shell，完成nodejs安装。
+
 ## 使用宝塔面板快速搭建网站
 
 宝塔面板是国内领先的服务器面板服务商，免费提供功能强大的服务器维护程序。在其官方网站运行在线安装脚本即可安装：
