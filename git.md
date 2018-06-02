@@ -239,6 +239,8 @@ git credential-cache exit
 
 在项目中，总会有一些特定的文件不想采用Git工具进行版本的控制，如临时文件、编译时产生的过渡文件或包含帐号信息的文件，对于这类文件，Git提供了一个非常高效灵活的方式进行屏蔽，即创建一个`.gitignore`文件。
 
+开发者还可通过[https://www.gitignore.io/](https://www.gitignore.io/)工具生成合适的`.gitignore`文件。
+
 在这个文件中，项目拥有者只需将不想进入版本仓库的文件列举出来即可，支持通配符。例如：
 
 ```sh

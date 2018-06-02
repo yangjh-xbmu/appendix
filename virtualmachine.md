@@ -90,14 +90,24 @@ cd centos-7
 vagrant init centos/7
 ```
 
-编辑配置文件，设置如下内容：
+编辑配置文件，常用设置如下：
 
 ```sh
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
 Vagrant.configure("2") do |config|
+
   config.vm.box = "centos/7"
+
   config.vm.network "private_network", ip: "192.168.33.10"
-  config.vm.network "public_network"
-  config.vm.synced_folder "data", "/vagrant_data"
+
+  config.vm.synced_folder "../data", "/www/wwwroot", create:true
+  config.vm.synced_folder ".", "/vagrant", disabled: true
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = "2048"
+  end
 end
 ```
 
@@ -149,6 +159,22 @@ vagrant ssh
 |vagrant destroy|销毁当前项目创建的虚拟机|
 
 ## 如何创建自己的虚拟机镜像包
+
+### 清理一些文件
+
+使用ssh登录到虚拟机，然后清理如下文件，这个文件不清除，这个 box 的项目在配置好网络的时候启动以后会遇到问题。
+
+```sh
+sudo rm -rf /etc/udev/rules.d/70-persistent-net.rules
+```
+
+### 打包box
+
+```sh
+vagrant package
+```
+
+该命令会在当前目录生成一个叫`package.box`的文件。
 
 ## 扩展阅读资料
 
