@@ -134,6 +134,13 @@ export PATH=$NODE_HOME/bin:$PATH
 
 重新登录shell，完成nodejs安装。
 
+### 安装yarn
+
+```sh
+curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
+sudo yum install yarn
+```
+
 ## 使用宝塔面板快速搭建网站
 
 宝塔面板是国内领先的服务器面板服务商，免费提供功能强大的服务器维护程序。在其官方网站运行在线安装脚本即可安装：
