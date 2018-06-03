@@ -147,6 +147,22 @@ Vue的组件后缀名为.vue，内容是html、css与js代码，使用`HTML/CSS/
 ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin
 ```
 
+### Sublime text 无法安装插件的解决办法
+
+Sublime text 编辑器有时会出现能显示插件，但是选择插件后没有任何反应的现象，解决方法如下：
+
+打开设置中的自定义设置信息，将其中的`"0_package_control_loader"`删除即可。
+
+```json
+{
+    "ignored_packages":
+    [   "0_package_control_loader",
+        "ASP",
+        "Vintage"
+    ]
+}
+```
+
 ## 学习资源
 
 * [Sublime Text 非官方详细文档](https://docs.sublimetext.info/en/latest/index.html)
