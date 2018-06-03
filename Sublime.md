@@ -72,6 +72,7 @@ Package Control是一个非常方便的扩展包管理扩展，在最新版中�
 * **Auto​PEP8** Python 语言自动排版美化插件。
 * **Meterial Theme** 一个漂亮有质感的界面。
 * **Terminal** 直接在编辑器中打开终端，并切换到项目目录，默认快捷键为`super+shift+t`。
+* **StandardSnippets** JavaScript 代码补全，符合`standardjs code style`。
 
 
 ## 常用快捷键
@@ -93,7 +94,7 @@ Package Control是一个非常方便的扩展包管理扩展，在最新版中�
 
 ## 常见问题
 
-### 如何自定制代码片段
+### 如何自定义代码片段
 
 对经常重复使用的代码片段，我们可以通过sublime text提供的自定义代码片段功能(snippet)来提高效率。
 
