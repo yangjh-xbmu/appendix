@@ -25,6 +25,11 @@ end
 ```sh
 sudo yum update
 ```
+## 设置时区信息
+
+```sh
+sudo cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+```
 
 ## 安装必要的服务
 
