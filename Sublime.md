@@ -91,6 +91,8 @@ Package Control是一个非常方便的扩展包管理扩展，在最新版中�
 * `Ctrl+Shift+G` 为当前内容添加起始和结束标签
 * `Ctrl+alt+up` 与上一行交换顺序
 * `Ctrl+alt+l` 进入多行编辑模式
+* `Ctrl+]` 增加缩进
+* `Ctrl+[` 删除缩进
 
 ## 常见问题
 
