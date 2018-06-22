@@ -146,6 +146,42 @@ curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yu
 sudo yum install yarn
 ```
 
+### 安装MongoDB
+
+CentOS中自带源中的MongoDB版本过低，因此，我们先添加自定义源：
+
+```sh
+sudo vi /etc/yum.repos.d/mongodb-org-3.6.rep
+```
+
+在文件中添加如下内容：
+
+```sh
+[mongodb-org-3.6]
+name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/3.6/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc
+```
+
+使用yum安装：
+
+```sh
+sudo yum install -y mongodb-org
+```
+
+启动服务并将其加入到自启动服务：
+
+```sh
+sudo systemctl start mongod
+sudo systemctl enable mongod
+```
+
+#### 常见问题
+
+1. `sudo systemctl start mongod`之后出错，有时可以通过重新安装MongoDB，常见的原因是目录访问权限设置有问题，也可通过设置目录权限来排除错误。
+
 ## 使用宝塔面板快速搭建网站
 
 宝塔面板是国内领先的服务器面板服务商，免费提供功能强大的服务器维护程序。在其官方网站运行在线安装脚本即可安装：
