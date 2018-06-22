@@ -180,7 +180,7 @@ sudo systemctl enable mongod
 
 #### 常见问题
 
-1. `sudo systemctl start mongod`之后出错，有时可以通过重新安装MongoDB，常见的原因是目录访问权限设置有问题，也可通过设置目录权限来排除错误。
+1. `sudo systemctl start mongod`之后出错，有时可以通过重新安装MongoDB解决，如果重新安装后依然无法启动服务，最常见的原因是目录访问权限设置有问题，也可通过设置目录权限来排除错误。
 
 ## 使用宝塔面板快速搭建网站
 
