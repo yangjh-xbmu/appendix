@@ -88,3 +88,21 @@ brew install tree
 brew install openssl
 brew install python
 ```
+
+### 更换源
+
+Homebrew的仓库托管在GitHub，在国内访问速度有时很慢，因此，有必要更新国内镜像源，推荐使用中国科技大学的镜像：
+
+```bash
+echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles' >> ~/.bash_profile
+source ~/.bash_profile
+
+cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
+git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
+
+cd "$(brew --repo)"
+git remote set-url origin https://mirrors.ustc.edu.cn/brew.git
+
+cd "$(brew --repo)"/Library/Taps/homebrew/homebrew-cask
+git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-cask.git
+```
