@@ -276,7 +276,7 @@ Deleted branch hotfix (3a0874c).
 
 ![git flow](./images/git-model@2x.png)
 
-详细情况请阅读[一个成功的Git分支模型](https://nvie.com/posts/a-successful-git-branching-model/)
+其核心是创建开发分支，将日常开发生成的代码和正式发布运行的代码分离起来，即日常工作都在`develop`分支完成，测试无误后，将其合并到`master`分支。详细情况请阅读[一个成功的Git分支模型](https://nvie.com/posts/a-successful-git-branching-model/)。
 
 ## Git进阶
 
