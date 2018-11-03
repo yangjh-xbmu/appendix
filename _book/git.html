@@ -33,7 +33,11 @@
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
                 
             
                 
@@ -349,54 +353,54 @@
 <p>&#x83B7;&#x53D6;&#x5DF2;&#x6709;&#x9879;&#x76EE;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5206;&#x4E3A;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;&#x5373;&#x9996;&#x6B21;&#x83B7;&#x53D6;&#x548C;&#x66F4;&#x65B0;&#x6570;&#x636E;&#x3002;</p>
 <h3 id="&#x9996;&#x6B21;&#x83B7;&#x53D6;&#x4EE3;&#x7801;">&#x9996;&#x6B21;&#x83B7;&#x53D6;&#x4EE3;&#x7801;</h3>
 <p>&#x7B2C;&#x4E00;&#x6B21;&#x83B7;&#x53D6;&#x5DF2;&#x6709;&#x9879;&#x76EE;&#x6570;&#x636E;&#x7684;&#x5E76;&#x4E0D;&#x590D;&#x6742;&#xFF0C;&#x9996;&#x5148;&#x5728;&#x60F3;&#x8981;&#x4FDD;&#x5B58;&#x9879;&#x76EE;&#x4EE3;&#x7801;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x4E0A;&#x6309;&#x53F3;&#x952E;&#xFF0C;&#x9009;&#x62E9;Git Bash&#xFF0C;&#x8FDB;&#x5165;Git&#x547D;&#x4EE4;&#x884C;&#x3002;&#x7136;&#x540E;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#xFF0C;&#x5373;&#x53EF;&#x83B7;&#x5F97;&#x6258;&#x7BA1;&#x5728;&#x8FDC;&#x7A0B;&#x7F51;&#x7AD9;&#x4E2D;&#x7684;&#x9879;&#x76EE;&#x6587;&#x4EF6;&#xFF08;&#x5305;&#x62EC;&#x4EE3;&#x7801;&#x548C;&#x7248;&#x672C;&#x4ED3;&#x5E93;&#xFF09;&#xFF0C;&#x5982;&#xFF1A;</p>
-<pre><code class="lang-sh">git <span class="hljs-built_in">clone</span> https://git.oschina.net/yangjh/LearningPHP.git
+<pre class="language-"><code class="lang-sh"><span class="token function">git</span> clone https://git.oschina.net/yangjh/LearningPHP.git
 </code></pre>
 <p>&#x5176;&#x4E2D;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;<a href="https://git.oschina.net/yangjh/LearningPHP.git" target="_blank">https://git.oschina.net/yangjh/LearningPHP.git</a>&#x5C31;&#x662F;&#x516C;&#x5E03;&#x5728;&#x6258;&#x7BA1;&#x7F51;&#x7AD9;&#x4E2D;&#x7684;&#x9879;&#x76EE;&#x5730;&#x5740;&#x3002;&#x4E0A;&#x8FF0;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x5B8C;&#x540E;&#xFF0C;&#x7528;&#x6237;&#x5C06;&#x5F97;&#x5230;&#x9879;&#x76EE;&#x6587;&#x4EF6;&#x3002;</p>
 <h3 id="&#x83B7;&#x53D6;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x7684;&#x66F4;&#x65B0;&#x4EE3;&#x7801;">&#x83B7;&#x53D6;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x7684;&#x66F4;&#x65B0;&#x4EE3;&#x7801;</h3>
 <p>&#x5728;&#x5B8C;&#x6210;&#x4E86;&#x5BF9;&#x9879;&#x76EE;&#x4ED3;&#x5E93;&#x7684;&#x9996;&#x6B21;&#x514B;&#x9686;&#x540E;&#xFF0C;&#x60F3;&#x8981;&#x83B7;&#x53D6;&#x9879;&#x76EE;&#x7684;&#x6700;&#x65B0;&#x4EE3;&#x7801;&#xFF0C;&#x53EA;&#x9700;&#x5728;Git Bash&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x6267;&#x884C;&#x5982;&#x4E0B;&#x64CD;&#x4F5C;&#xFF1A;</p>
-<pre><code class="lang-sh">git pull
+<pre class="language-"><code class="lang-sh"><span class="token function">git</span> pull
 </code></pre>
 <h3 id="&#x83B7;&#x53D6;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x7684;&#x7279;&#x5B9A;&#x5206;&#x652F;">&#x83B7;&#x53D6;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x7684;&#x7279;&#x5B9A;&#x5206;&#x652F;</h3>
-<pre><code class="lang-sh">git <span class="hljs-built_in">clone</span> -b &lt;branch name&gt; [remote repository address]
+<pre class="language-"><code class="lang-sh"><span class="token function">git</span> clone -b <span class="token operator">&lt;</span>branch name<span class="token operator">&gt;</span> <span class="token punctuation">[</span>remote repository address<span class="token punctuation">]</span>
 </code></pre>
 <p>&#x4E3B;&#x8981;&#x5C31;&#x662F;&#x5728;clone&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x540E;&#x9762;&#x6DFB;&#x52A0;branch&#x7684;&#x4FE1;&#x606F;&#x3002;&#x5982;&#x514B;&#x9686;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;<code>https://git.coding.net/adamyang/blog.git</code>&#x4E2D;&#x7684;coding-pages&#x5206;&#x652F;&#xFF1A;</p>
-<pre><code class="lang-sh">git <span class="hljs-built_in">clone</span> -b coding-pages https://git.coding.net/adamyang/blog.git
+<pre class="language-"><code class="lang-sh"><span class="token function">git</span> clone -b coding-pages https://git.coding.net/adamyang/blog.git
 </code></pre>
 <h2 id="&#x7528;git&#x7BA1;&#x7406;&#x81EA;&#x5DF1;&#x7684;&#x9879;&#x76EE;&#x4EE3;&#x7801;">&#x7528;Git&#x7BA1;&#x7406;&#x81EA;&#x5DF1;&#x7684;&#x9879;&#x76EE;&#x4EE3;&#x7801;</h2>
 <h3 id="&#x8BBE;&#x7F6E;git">&#x8BBE;&#x7F6E;Git</h3>
 <p>&#x4F7F;&#x7528; Git &#x5DE5;&#x4F5C;&#x4E4B;&#x524D;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x505A;&#x4E2A;&#x4E00;&#x6B21;&#x6027;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x8FD9;&#x6837;Git&#x5C31;&#x80FD;&#x8DDF;&#x8E2A;&#x5230;&#x8C01;&#x505A;&#x4E86;&#x4FEE;&#x6539;&#xFF1A;</p>
-<pre><code class="lang-sh">git config --global user.name <span class="hljs-string">&quot;your_username&quot;</span>
-git config --global user.email <span class="hljs-string">&quot;your_email@domain.com&quot;</span>
+<pre class="language-"><code class="lang-sh"><span class="token function">git</span> config --global user.name <span class="token string">&quot;your_username&quot;</span>
+<span class="token function">git</span> config --global user.email <span class="token string">&quot;your_email@domain.com&quot;</span>
 </code></pre>
 <p>&#x8FD8;&#x9700;&#x8981;&#x8BBE;&#x5B9A;&#x63A8;&#x9001;&#xFF08;push&#xFF09;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#xFF1A;</p>
-<pre><code class="lang-sh">git config --global push.default simple
+<pre class="language-"><code class="lang-sh"><span class="token function">git</span> config --global push.default simple
 </code></pre>
 <h3 id="&#x9996;&#x6B21;&#x5EFA;&#x7ACB;git&#x4ED3;&#x5E93;">&#x9996;&#x6B21;&#x5EFA;&#x7ACB;Git&#x4ED3;&#x5E93;</h3>
 <p>&#x4F7F;&#x7528;Git&#x7BA1;&#x7406;&#x81EA;&#x5DF1;&#x7684;&#x9879;&#x76EE;&#x4EE3;&#x7801;&#xFF0C;&#x4E5F;&#x5206;&#x4E3A;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;&#x9996;&#x6B21;&#x5EFA;&#x7ACB;&#x4ED3;&#x5E93;&#x548C;&#x63D0;&#x4EA4;&#x66F4;&#x65B0;&#x5185;&#x5BB9;&#x3002;</p>
 <p>&#x521D;&#x59CB;&#x5316;&#x672C;&#x5730;&#x9879;&#x76EE;&#x3002;&#x5728;&#x76F8;&#x5E94;&#x9879;&#x76EE;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x4E0A;&#x6309;&#x53F3;&#x952E;&#xFF0C;&#x9009;&#x62E9;Git Init here&#x3002;&#x6216;&#x8005;&#x8FDB;&#x5165;Git Bash&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x6267;&#x884C;</p>
-<pre><code class="lang-sh">git init
+<pre class="language-"><code class="lang-sh"><span class="token function">git</span> init
 </code></pre>
 <p>&#x5728;&#x9879;&#x76EE;&#x6587;&#x4EF6;&#x5939;&#x4E0A;&#x6309;&#x53F3;&#x952E;&#xFF0C;&#x9009;&#x62E9;Git add all files now&#xFF0C;&#x5C06;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x6DFB;&#x52A0;&#x5230;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x4E2D;&#x3002;&#x6216;&#x8005;&#x8FDB;&#x5165;Git Bash&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x6267;&#x884C;</p>
-<pre><code class="lang-sh">git add .
+<pre class="language-"><code class="lang-sh"><span class="token function">git</span> add <span class="token keyword">.</span>
 </code></pre>
 <p>&#x5728;&#x9879;&#x76EE;&#x6587;&#x4EF6;&#x5939;&#x4E0A;&#x6309;&#x53F3;&#x952E;&#xFF0C;&#x9009;&#x62E9;Git commit tool&#xFF0C;&#x5728;&#x968F;&#x540E;&#x5F39;&#x51FA;&#x7684;&#x5BF9;&#x8BDD;&#x6846;&#x4E2D;&#x8F93;&#x5165;&#x66F4;&#x65B0;&#x8BF4;&#x660E;&#xFF0C;&#x63D0;&#x4EA4;&#x3002;&#x6216;&#x8005;&#x8FDB;&#x5165;Git Bash&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x6267;&#x884C;</p>
-<pre><code class="lang-sh">git commit -m <span class="hljs-string">&quot;.....&#x66F4;&#x65B0;&#x8BF4;&#x660E;&quot;</span>
+<pre class="language-"><code class="lang-sh"><span class="token function">git</span> commit -m <span class="token string">&quot;.....&#x66F4;&#x65B0;&#x8BF4;&#x660E;&quot;</span>
 </code></pre>
 <p>&#x5982;&#x679C;&#x60F3;&#x5BF9;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x5EFA;&#x7ACB;&#x8FDC;&#x7A0B;&#x7684;&#x955C;&#x50CF;&#xFF0C;&#x5373;&#x5C06;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x6258;&#x7BA1;&#x5230;github&#x4E4B;&#x7C7B;&#x7684;&#x7AD9;&#x70B9;&#xFF0C;&#x5E94;&#x5148;&#x5230;&#x6B64;&#x7C7B;&#x7AD9;&#x70B9;&#x6CE8;&#x518C;&#x5E10;&#x53F7;&#xFF0C;&#x5EFA;&#x7ACB;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#xFF0C;&#x7136;&#x540E;&#x6267;&#x884C;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#x5EFA;&#x7ACB;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x548C;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x7684;&#x5BF9;&#x5E94;&#x5173;&#x7CFB;&#xFF1A;</p>
-<pre><code class="lang-sh">git add remote origin https://&#x4ED3;&#x5E93;&#x5730;&#x5740;
+<pre class="language-"><code class="lang-sh"><span class="token function">git</span> add remote origin https://&#x4ED3;&#x5E93;&#x5730;&#x5740;
 </code></pre>
 <p>&#x63A8;&#x9001;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x6570;&#x636E;&#x5230;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#xFF0C;&#x6267;&#x884C;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;</p>
-<pre><code class="lang-sh">git push -u origin master
+<pre class="language-"><code class="lang-sh"><span class="token function">git</span> push -u origin master
 </code></pre>
 <p>&#x7136;&#x540E;&#x8F93;&#x5165;&#x7528;&#x6237;&#x540D;&#x548C;&#x5BC6;&#x7801;&#x5373;&#x53EF;&#x5B8C;&#x6210;&#x63A8;&#x9001;&#x3002;</p>
 <h3 id="&#x63D0;&#x4EA4;&#x66F4;&#x65B0;&#x5185;&#x5BB9;">&#x63D0;&#x4EA4;&#x66F4;&#x65B0;&#x5185;&#x5BB9;</h3>
 <p>&#x5B8C;&#x6210;&#x4E0A;&#x8FF0;&#x64CD;&#x4F5C;&#x540E;&#xFF0C;&#x4EE5;&#x540E;&#x7684;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#x5C31;&#x66F4;&#x7B80;&#x6D01;&#x4E86;&#xFF1A;</p>
 <ol>
 <li>&#x7F16;&#x5199;&#x6216;&#x8005;&#x4FEE;&#x6539;&#x4EE3;&#x7801;&#xFF0C;&#x4FDD;&#x5B58;&#x6587;&#x4EF6;&#x3002;</li>
-<li>&#x6DFB;&#x52A0;&#x66F4;&#x65B0;&#x6587;&#x4EF6;&#x5230;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#xFF0C;&#x9009;&#x62E9;Git add all files now&#x5373;&#x53EF;&#x3002;&#x6216;&#x8005;&#x8FDB;&#x5165;Git Bash&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x6267;&#x884C;<pre><code class="lang-sh">git add .
+<li>&#x6DFB;&#x52A0;&#x66F4;&#x65B0;&#x6587;&#x4EF6;&#x5230;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#xFF0C;&#x9009;&#x62E9;Git add all files now&#x5373;&#x53EF;&#x3002;&#x6216;&#x8005;&#x8FDB;&#x5165;Git Bash&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x6267;&#x884C;<pre class="language-"><code class="lang-sh"><span class="token function">git</span> add <span class="token keyword">.</span>
 </code></pre>
 </li>
-<li>&#x9009;&#x62E9;Git commit tool&#x4E3A;&#x8FD9;&#x4E9B;&#x66F4;&#x65B0;&#x6DFB;&#x52A0;&#x8BF4;&#x660E;&#x6CE8;&#x91CA;&#x3002;&#x6216;&#x8005;&#x8FDB;&#x5165;Git Bash&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x6267;&#x884C;<pre><code class="lang-sh">git commit -m <span class="hljs-string">&quot;.....&#x66F4;&#x65B0;&#x8BF4;&#x660E;&quot;</span>
+<li>&#x9009;&#x62E9;Git commit tool&#x4E3A;&#x8FD9;&#x4E9B;&#x66F4;&#x65B0;&#x6DFB;&#x52A0;&#x8BF4;&#x660E;&#x6CE8;&#x91CA;&#x3002;&#x6216;&#x8005;&#x8FDB;&#x5165;Git Bash&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x6267;&#x884C;<pre class="language-"><code class="lang-sh"><span class="token function">git</span> commit -m <span class="token string">&quot;.....&#x66F4;&#x65B0;&#x8BF4;&#x660E;&quot;</span>
 </code></pre>
 </li>
 <li>&#x6267;&#x884C;Git push&#x5C06;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x540C;&#x6B65;&#x5230;&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x3002;</li>
@@ -409,26 +413,26 @@ git config --global user.email <span class="hljs-string">&quot;your_email@domain
 <li>&#x521B;&#x5EFA;&#x4ED3;&#x5E93;&#x3002;&#x5728;GitHub&#x6CE8;&#x518C;&#x767B;&#x9646;&#x540E;&#xFF0C;&#x521B;&#x5EFA;&#x4EE5;&#x81EA;&#x5DF1;&#x7528;&#x6237;&#x540D;&#x5F00;&#x5934;&#x7684;&#x201C;username.github.io&#x201D;&#x7684;&#x516C;&#x5F00;&#x4ED3;&#x5E93;&#xFF0C;&#x5176;&#x4E2D;username&#x5FC5;&#x987B;&#x548C;GitHub&#x6CE8;&#x518C;&#x65F6;&#x7684;&#x7528;&#x6237;&#x540D;&#x4E00;&#x81F4;&#xFF0C;&#x5426;&#x5219;&#x65E0;&#x6CD5;&#x4F7F;&#x7528;Github page&#x670D;&#x52A1;&#x3002;</li>
 <li>&#x514B;&#x9686;&#x4ED3;&#x5E93;&#x3002;&#x8FDB;&#x5165;&#x5230;&#x60F3;&#x8981;&#x5B58;&#x50A8;&#x9879;&#x76EE;&#x7684;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x6267;&#x884C;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#x514B;&#x9686;&#x4ED3;&#x5E93;&#xFF1A;</li>
 </ol>
-<pre><code class="lang-sh">git <span class="hljs-built_in">clone</span> https://github.com/username/username.github.io.git
+<pre class="language-"><code class="lang-sh"><span class="token function">git</span> clone https://github.com/username/username.github.io.git
 </code></pre>
 <p>&#x8F93;&#x5165;&#x7528;&#x6237;&#x540D;&#x3001;&#x5BC6;&#x7801;&#xFF0C;&#x5B8C;&#x6210;&#x514B;&#x9686;&#x64CD;&#x4F5C;&#x540E;&#xFF0C;&#x5E94;&#x8BE5;&#x5728;&#x6587;&#x4EF6;&#x5939;&#x751F;&#x6210;&#x201C;username.github.io&#x201D;&#x7684;&#x5B50;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x4E4B;&#x540E;&#x4E2A;&#x4EBA;&#x7AD9;&#x70B9;&#x7684;&#x6587;&#x4EF6;&#x548C;&#x64CD;&#x4F5C;&#x90FD;&#x5728;&#x8BE5;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x5B8C;&#x6210;&#x3002;</p>
 <ol>
 <li>&#x521B;&#x5EFA;&#x9996;&#x9875;&#x3002;&#x8FDB;&#x5165;&#x672C;&#x5730;&#x201C;username.github.io&#x201D;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x4F7F;&#x7528;&#x7F16;&#x8F91;&#x5668;&#x521B;&#x5EFA;index.html&#xFF0C;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x5C06;&#x662F;&#x4E2A;&#x4EBA;&#x7AD9;&#x70B9;&#x7684;&#x9996;&#x9875;&#x3002;</li>
 <li>&#x63D0;&#x4EA4;&#x4EE3;&#x7801;&#x5230;GitHub&#x3002;&#x5B8C;&#x6210;&#x9875;&#x9762;&#x7F16;&#x8F91;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x53D1;&#x5E03;&#x4EE3;&#x7801;&#x5230;GitHub&#xFF1A;</li>
 </ol>
-<pre><code class="lang-sh">git add --all
-git commit -m <span class="hljs-string">&quot;Initial commit&quot;</span>
-git push -u origin master
+<pre class="language-"><code class="lang-sh"><span class="token function">git</span> add --all
+<span class="token function">git</span> commit -m <span class="token string">&quot;Initial commit&quot;</span>
+<span class="token function">git</span> push -u origin master
 </code></pre>
 <p>&#x5982;&#x679C;&#x662F;&#x9996;&#x6B21;&#x8FD0;&#x884C;git&#x5DE5;&#x5177;&#xFF0C;&#x8FD8;&#x8981;&#x8FDB;&#x884C;&#x5168;&#x5C40;&#x6027;&#x7528;&#x6237;&#x540D;&#x548C;&#x90AE;&#x7BB1;&#x7684;&#x58F0;&#x660E;&#xFF1A;</p>
-<pre><code class="lang-sh">git config --global user.email <span class="hljs-string">&quot;username@mail.com&quot;</span>
-git config --global user.name <span class="hljs-string">&quot;username&quot;</span>
+<pre class="language-"><code class="lang-sh"><span class="token function">git</span> config --global user.email <span class="token string">&quot;username@mail.com&quot;</span>
+<span class="token function">git</span> config --global user.name <span class="token string">&quot;username&quot;</span>
 </code></pre>
 <p>&#x4E0A;&#x8FF0;&#x64CD;&#x4F5C;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x5C06;&#x63A8;&#x9001;&#x5230;GitHub&#x8FDC;&#x7A0B;&#x4ED3;&#x5E93;&#x3002;</p>
 <ol>
 <li>&#x6D4F;&#x89C8;&#x7AD9;&#x70B9;&#x3002;&#x542F;&#x52A8;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x8BBF;&#x95EE;&#x5982;&#x4E0B;&#x5730;&#x5740;&#xFF0C;&#x5373;&#x53EF;&#x6D4F;&#x89C8;&#x7AD9;&#x70B9;&#xFF1A;</li>
 </ol>
-<pre><code class="lang-sh">http://username.github.io
+<pre class="language-"><code class="lang-sh">http://username.github.io
 </code></pre>
 <h2 id="git-&#x5206;&#x652F;&#x7BA1;&#x7406;">Git &#x5206;&#x652F;&#x7BA1;&#x7406;</h2>
 <p>&#x4E0E;&#x5176;&#x5B83;&#x7248;&#x672C;&#x63A7;&#x5236;&#x7CFB;&#x7EDF;&#x4E0D;&#x540C;&#xFF0C;Git &#x9F13;&#x52B1;&#x4F7F;&#x7528;&#x5206;&#x652F;&#x4E0E;&#x5408;&#x5E76;&#x3002;&#x7406;&#x89E3;Git&#x5206;&#x652F;&#x7279;&#x6027;&#xFF0C;&#x4ECE;&#x6539;&#x53D8;&#x4F60;&#x7684;&#x5F00;&#x53D1;&#x65B9;&#x5F0F;&#x548C;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#x3002;</p>
@@ -439,12 +443,12 @@ git config --global user.name <span class="hljs-string">&quot;username&quot;</sp
 <p>&#x603B;&#x800C;&#x8A00;&#x4E4B;&#xFF0C;&#x5F53;&#x4F60;&#x60F3;&#x589E;&#x52A0;&#x529F;&#x80FD;&#xFF0C;&#x800C;&#x4F60;&#x4E0D;&#x80FD;&#x3001;&#x6216;&#x8005;&#x4E0D;&#x60F3;&#x76F4;&#x63A5;&#x5728;&#x7236;&#x5206;&#x652F;&#x8FDB;&#x884C;&#x5F00;&#x53D1;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x5E94;&#x8BE5;&#x4F7F;&#x7528;&#x5206;&#x652F;&#x3002;</p>
 <h3 id="&#x521B;&#x5EFA;&#x5206;&#x652F;">&#x521B;&#x5EFA;&#x5206;&#x652F;</h3>
 <p>&#x4F7F;&#x7528;git branch &#x5C31;&#x80FD;&#x521B;&#x5EFA;&#x5206;&#x652F;&#xFF1A;</p>
-<pre><code class="lang-bash">$ git branch testing      // &#x5728;&#x5F53;&#x524D;&#x5206;&#x652F;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x521B;&#x5EFA;testing&#x5206;&#x652F;&#xFF0C;&#x4F46;&#x5E76;&#x6CA1;&#x6709;&#x5207;&#x6362;&#x5230;testing&#x5206;&#x652F;
-$ git checkout -b iss53   // &#x5728;&#x5F53;&#x524D;&#x5206;&#x652F;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x521B;&#x5EFA;iss53&#x5206;&#x652F;&#xFF0C;&#x5E76;&#x5207;&#x6362;&#x5230;iss53&#x5206;&#x652F;
+<pre class="language-"><code class="lang-bash">$ <span class="token function">git</span> branch testing      // &#x5728;&#x5F53;&#x524D;&#x5206;&#x652F;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x521B;&#x5EFA;testing&#x5206;&#x652F;&#xFF0C;&#x4F46;&#x5E76;&#x6CA1;&#x6709;&#x5207;&#x6362;&#x5230;testing&#x5206;&#x652F;
+$ <span class="token function">git</span> checkout -b iss53   // &#x5728;&#x5F53;&#x524D;&#x5206;&#x652F;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x521B;&#x5EFA;iss53&#x5206;&#x652F;&#xFF0C;&#x5E76;&#x5207;&#x6362;&#x5230;iss53&#x5206;&#x652F;
 </code></pre>
 <h3 id="&#x67E5;&#x770B;&#x5206;&#x652F;">&#x67E5;&#x770B;&#x5206;&#x652F;</h3>
 <p>&#x5F53;&#x6211;&#x4EEC;&#x4F7F;&#x7528;Git&#x5DE5;&#x5177;&#xFF0C;&#x521B;&#x9020;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x65F6;&#xFF0C;Git&#x4F1A;&#x9ED8;&#x8BA4;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;&#x201C;master&#x201D;&#x7684;&#x672C;&#x5730;&#x5206;&#x652F;&#x3002;&#x4F7F;&#x7528;<code>git branch</code>&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x5F53;&#x524D;&#x6240;&#x5904;&#x7684;&#x5206;&#x652F;&#xFF1A;</p>
-<pre><code class="lang-bash">$ git branch
+<pre class="language-"><code class="lang-bash">$ <span class="token function">git</span> branch
 
   master
   testing
@@ -453,21 +457,21 @@ $ git checkout -b iss53   // &#x5728;&#x5F53;&#x524D;&#x5206;&#x652F;&#x7684;&#x
 <p>&#x5176;&#x4E2D;&#x7684;<code>*</code>&#x53F7;&#x8868;&#x793A;&#x7528;&#x6237;&#x5F53;&#x524D;&#x6B63;&#x5728;&#x4F7F;&#x7528;&#x7684;&#x5206;&#x652F;&#x3002;</p>
 <h3 id="&#x5408;&#x5E76;&#x5206;&#x652F;">&#x5408;&#x5E76;&#x5206;&#x652F;</h3>
 <p>&#x5047;&#x8BBE;&#x4F60;&#x5DF2;&#x7ECF;&#x4FEE;&#x6B63;&#x4E86; iss53 &#x95EE;&#x9898;&#xFF0C;&#x5E76;&#x4E14;&#x6253;&#x7B97;&#x5C06;&#x4F60;&#x7684;&#x5DE5;&#x4F5C;&#x5408;&#x5E76;&#x5165; master &#x5206;&#x652F;&#x3002;&#x4E3A;&#x6B64;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x5408;&#x5E76; iss53 &#x5206;&#x652F;&#x5230; master &#x5206;&#x652F;&#xFF0C;&#x4F7F;&#x7528;merge&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x5206;&#x652F;&#x7684;&#x5408;&#x5E76;&#xFF0C;&#x5408;&#x5E76;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E00;&#x5B9A;&#x8981;&#x6CE8;&#x610F;&#x8981;&#x5728;&#x5408;&#x5E76;&#x5230;&#x7684;&#x5206;&#x652F;&#xFF08;&#x5982;&#xFF1A;master&#xFF09;&#x4E0A;&#x8FDB;&#x884C;&#x5DE5;&#x4F5C;&#x3002;</p>
-<pre><code class="lang-bash">$ git checkout master                   // &#x5148;&#x5207;&#x6362;&#x5230;master&#x5206;&#x652F;
+<pre class="language-"><code class="lang-bash">$ <span class="token function">git</span> checkout master                   // &#x5148;&#x5207;&#x6362;&#x5230;master&#x5206;&#x652F;
 
-Switched to branch <span class="hljs-string">&apos;master&apos;</span>
+Switched to branch <span class="token string">&apos;master&apos;</span>
 
-$ git merge iss53                       // &#x5408;&#x5E76;iss53&#x5206;&#x652F;&#x5230;&#x5F53;&#x524D;&#xFF08;master&#xFF09;&#x5206;&#x652F;
+$ <span class="token function">git</span> merge iss53                       // &#x5408;&#x5E76;iss53&#x5206;&#x652F;&#x5230;&#x5F53;&#x524D;&#xFF08;master&#xFF09;&#x5206;&#x652F;
 
-Merge made by the <span class="hljs-string">&apos;recursive&apos;</span> strategy.
-index.html |    1 +
-1 file changed, 1 insertion(+)
+Merge made by the <span class="token string">&apos;recursive&apos;</span> strategy.
+index.html <span class="token operator">|</span>    1 +
+1 <span class="token function">file</span> changed, 1 insertion<span class="token punctuation">(</span>+<span class="token punctuation">)</span>
 </code></pre>
 <p>&#x6267;&#x884C;merge&#x64CD;&#x4F5C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5982;&#x9047;&#x5230;&#x9700;&#x8981;&#x4EBA;&#x5DE5;&#x51B3;&#x5B9A;&#x5185;&#x5BB9;&#x7684;&#x53D8;&#x52A8;&#x65F6;&#xFF0C;Git&#x5DE5;&#x5177;&#x4F1A;&#x63D0;&#x793A;&#x4F60;&#x8FDB;&#x884C;&#x4EBA;&#x5DE5;&#x64CD;&#x4F5C;&#xFF0C;&#x5BF9;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x540E;&#xFF0C;&#x5408;&#x5E76;&#x624D;&#x80FD;&#x6210;&#x529F;&#x3002;</p>
 <h3 id="&#x5982;&#x4F55;&#x5220;&#x9664;&#x5206;&#x652F;">&#x5982;&#x4F55;&#x5220;&#x9664;&#x5206;&#x652F;</h3>
 <p>&#x5F53;&#x67D0;&#x4E2A;&#x5206;&#x652F;&#x7684;&#x4F7F;&#x547D;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;branch&#x547D;&#x4EE4;&#x8FDB;&#x884C;&#x5220;&#x9664;&#xFF1A;</p>
-<pre><code class="lang-bash">$ git branch <span class="hljs-_">-d</span> hotfix
-Deleted branch hotfix (3a0874c).
+<pre class="language-"><code class="lang-bash">$ <span class="token function">git</span> branch -d hotfix
+Deleted branch hotfix <span class="token punctuation">(</span>3a0874c<span class="token punctuation">)</span>.
 </code></pre>
 <p>&#x5728;<code>-d</code>&#x53C2;&#x6570;&#x540E;&#x52A0;&#x4E0A;&#x9700;&#x8981;&#x5220;&#x9664;&#x7684;&#x5206;&#x652F;&#x5373;&#x53EF;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x5220;&#x9664;&#x7684;&#x5206;&#x652F;&#x4E2D;&#x6709;&#x6CA1;&#x6709;&#x5408;&#x5E76;&#x5230;&#x7236;&#x5206;&#x652F;&#x7684;&#x5185;&#x5BB9;&#xFF0C;Git&#x5DE5;&#x5177;&#x4F1A;&#x8FDB;&#x884C;&#x63D0;&#x793A;&#x3002;&#x5982;&#x679C;&#x8BE5;&#x5206;&#x652F;&#x7684;&#x5185;&#x5BB9;&#x5DF2;&#x7ECF;&#x5408;&#x5E76;&#xFF0C;&#x5219;&#x4F1A;&#x6267;&#x884C;&#x5206;&#x652F;&#x5220;&#x9664;&#x64CD;&#x4F5C;&#x3002;</p>
 <h3 id="&#x5206;&#x652F;&#x7BA1;&#x7406;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;">&#x5206;&#x652F;&#x7BA1;&#x7406;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;</h3>
@@ -479,49 +483,49 @@ Deleted branch hotfix (3a0874c).
 <h3 id="&#x5982;&#x4F55;&#x4E3A;&#x9879;&#x76EE;&#x521B;&#x5EFA;&#x4E0D;&#x540C;&#x4E8E;&#x5168;&#x5C40;&#x6027;&#x8BBE;&#x7F6E;&#x7684;&#x7528;&#x6237;&#x4FE1;&#x606F;">&#x5982;&#x4F55;&#x4E3A;&#x9879;&#x76EE;&#x521B;&#x5EFA;&#x4E0D;&#x540C;&#x4E8E;&#x5168;&#x5C40;&#x6027;&#x8BBE;&#x7F6E;&#x7684;&#x7528;&#x6237;&#x4FE1;&#x606F;</h3>
 <p>&#x5728;&#x6709;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x7684;&#x9879;&#x76EE;&#x4ED3;&#x5E93;&#xFF0C;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x4E0D;&#x540C;&#x4E8E;&#x5168;&#x5C40;&#x6027;&#x8BBE;&#x7F6E;&#x7684;&#x7528;&#x6237;&#x4FE1;&#x606F;&#xFF0C;&#x5C24;&#x5176;&#x662F;&#x6211;&#x4EEC;&#x5728;&#x4E0D;&#x540C;&#x7684;&#x4EE3;&#x7801;&#x6258;&#x7BA1;&#x7AD9;&#x70B9;&#x521B;&#x5EFA;&#x4E86;&#x591A;&#x4E2A;&#x4ED3;&#x5E93;&#x65F6;&#xFF0C;&#x5F88;&#x6709;&#x53EF;&#x80FD;&#x4E0D;&#x540C;&#x7F51;&#x7AD9;&#x7684;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x662F;&#x4E0D;&#x4E00;&#x81F4;&#x7684;&#x3002;&#x600E;&#x6837;&#x624D;&#x80FD;&#x4E3A;&#x4E0D;&#x540C;&#x4ED3;&#x5E93;&#x8BBE;&#x7F6E;&#x4E0D;&#x540C;&#x7684;&#x7528;&#x6237;&#x4FE1;&#x606F;&#xFF0C;&#x800C;&#x4E0D;&#x4F7F;&#x7528;&#x540C;&#x4E00;&#x5168;&#x5C40;&#x6027;&#x4FE1;&#x606F;&#x5462;&#xFF1F;</p>
 <p>&#x60F3;&#x4F7F;&#x7528;&#x5168;&#x5C40;&#x914D;&#x7F6E;&#x6216;&#x662F;&#x67D0;&#x4E2A;&#x9879;&#x76EE;&#x9700;&#x8981;&#x5355;&#x72EC;&#x914D;&#x7F6E; <code>user.name</code> &#x548C; <code>user.email</code>&#xFF1A;</p>
-<pre><code class="lang-sh">git config user.name <span class="hljs-string">&quot;xxx&quot;</span>
-git config user.email <span class="hljs-string">&quot;xxx@163.com&quot;</span>
+<pre class="language-"><code class="lang-sh"><span class="token function">git</span> config user.name <span class="token string">&quot;xxx&quot;</span>
+<span class="token function">git</span> config user.email <span class="token string">&quot;xxx@163.com&quot;</span>
 </code></pre>
 <p>&#x67E5;&#x770B;Git&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#xFF0C;&#x5305;&#x62EC;&#x5168;&#x5C40;&#x914D;&#x7F6E;&#x548C;&#x9879;&#x76EE;&#x5F53;&#x524D;&#x914D;&#x7F6E;&#xFF0C;&#x4E8C;&#x8005;&#x90FD;&#x6709;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;<strong>Git&#x4F18;&#x5148;&#x4F7F;&#x7528;&#x9879;&#x76EE;&#x5F53;&#x524D;&#x914D;&#x7F6E;</strong>&#xFF1A;</p>
-<pre><code class="lang-sh">git config --list
+<pre class="language-"><code class="lang-sh"><span class="token function">git</span> config --list
 </code></pre>
 <h3 id="&#x5982;&#x4F55;&#x6E05;&#x9664;git&#x7F13;&#x5B58;">&#x5982;&#x4F55;&#x6E05;&#x9664;git&#x7F13;&#x5B58;</h3>
 <p>&#x5F53;&#x6211;&#x4EEC;&#x4FEE;&#x6539;&#x4E86;&#x4ED3;&#x5E93;&#x5BC6;&#x7801;&#x65F6;&#xFF0C;&#x7531;&#x4E8E;git&#x4F1A;&#x7F13;&#x5B58;&#x4E4B;&#x524D;&#x7684;&#x5BC6;&#x7801;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x51FA;&#x73B0;&#x6388;&#x6743;&#x9519;&#x8BEF;&#xFF0C;&#x8FD9;&#x662F;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;</p>
-<pre><code class="lang-sh">git credential-cache <span class="hljs-built_in">exit</span>
+<pre class="language-"><code class="lang-sh"><span class="token function">git</span> credential-cache <span class="token keyword">exit</span>
 </code></pre>
 <p>&#x6765;&#x6E05;&#x9664;&#x7F13;&#x5B58;&#x3002;</p>
 <h3 id="&#x5FFD;&#x7565;&#x9879;&#x76EE;&#x4E2D;&#x7684;&#x7279;&#x5B9A;&#x6587;&#x4EF6;">&#x5FFD;&#x7565;&#x9879;&#x76EE;&#x4E2D;&#x7684;&#x7279;&#x5B9A;&#x6587;&#x4EF6;</h3>
 <p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;&#x603B;&#x4F1A;&#x6709;&#x4E00;&#x4E9B;&#x7279;&#x5B9A;&#x7684;&#x6587;&#x4EF6;&#x4E0D;&#x60F3;&#x91C7;&#x7528;Git&#x5DE5;&#x5177;&#x8FDB;&#x884C;&#x7248;&#x672C;&#x7684;&#x63A7;&#x5236;&#xFF0C;&#x5982;&#x4E34;&#x65F6;&#x6587;&#x4EF6;&#x3001;&#x7F16;&#x8BD1;&#x65F6;&#x4EA7;&#x751F;&#x7684;&#x8FC7;&#x6E21;&#x6587;&#x4EF6;&#x6216;&#x5305;&#x542B;&#x5E10;&#x53F7;&#x4FE1;&#x606F;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5BF9;&#x4E8E;&#x8FD9;&#x7C7B;&#x6587;&#x4EF6;&#xFF0C;Git&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x9AD8;&#x6548;&#x7075;&#x6D3B;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x5C4F;&#x853D;&#xFF0C;&#x5373;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;<code>.gitignore</code>&#x6587;&#x4EF6;&#x3002;</p>
 <p>&#x5F00;&#x53D1;&#x8005;&#x8FD8;&#x53EF;&#x901A;&#x8FC7;<a href="https://www.gitignore.io/" target="_blank">https://www.gitignore.io/</a>&#x5DE5;&#x5177;&#x751F;&#x6210;&#x5408;&#x9002;&#x7684;<code>.gitignore</code>&#x6587;&#x4EF6;&#x3002;</p>
 <p>&#x5728;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x9879;&#x76EE;&#x62E5;&#x6709;&#x8005;&#x53EA;&#x9700;&#x5C06;&#x4E0D;&#x60F3;&#x8FDB;&#x5165;&#x7248;&#x672C;&#x4ED3;&#x5E93;&#x7684;&#x6587;&#x4EF6;&#x5217;&#x4E3E;&#x51FA;&#x6765;&#x5373;&#x53EF;&#xFF0C;&#x652F;&#x6301;&#x901A;&#x914D;&#x7B26;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
-<pre><code class="lang-sh">*.sublime-project
+<pre class="language-"><code class="lang-sh">*.sublime-project
 *.sublime-workspace
 *.bak
 *.dump
-.gz(busy)
-<span class="hljs-built_in">test</span>/*
+.gz<span class="token punctuation">(</span>busy<span class="token punctuation">)</span>
+test/*
 </code></pre>
 <p>&#x9700;&#x8981;&#x63D0;&#x9192;&#x7684;&#x662F;&#xFF0C;&#x5F53;<code>.gitignore</code>&#x6587;&#x4EF6;&#x66F4;&#x6539;&#x540E;&#xFF0C;&#x5E76;&#x4E0D;&#x80FD;&#x7ACB;&#x5373;&#x8D77;&#x6548;&#xFF0C;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x5982;&#x4E0B;&#x64CD;&#x4F5C;&#xFF1A;</p>
 <ol>
-<li>&#x6E05;&#x9664;&#x7F13;&#x5B58;&#x3002;&#x547D;&#x4EE4;&#x4E3A;&#xFF1A;<pre><code class="lang-sh">git rm -r --cached .
+<li>&#x6E05;&#x9664;&#x7F13;&#x5B58;&#x3002;&#x547D;&#x4EE4;&#x4E3A;&#xFF1A;<pre class="language-"><code class="lang-sh"><span class="token function">git</span> <span class="token function">rm</span> -r --cached <span class="token keyword">.</span>
 </code></pre>
 </li>
-<li>&#x6DFB;&#x52A0;&#x6587;&#x4EF6;&#x5230;&#x4ED3;&#x5E93;&#x3002;<pre><code class="lang-sh">git add .
+<li>&#x6DFB;&#x52A0;&#x6587;&#x4EF6;&#x5230;&#x4ED3;&#x5E93;&#x3002;<pre class="language-"><code class="lang-sh"><span class="token function">git</span> add <span class="token keyword">.</span>
 </code></pre>
 &#x4E4B;&#x540E;&#x5C31;&#x53EF;&#x6DFB;&#x52A0;&#x8BF4;&#x660E;&#x3001;&#x63A8;&#x9001;&#x3002;</li>
 </ol>
 <h3 id="&#x5F7B;&#x5E95;&#x5220;&#x9664;&#x4ED3;&#x5E93;&#x4E2D;&#x7684;&#x6587;&#x4EF6;">&#x5F7B;&#x5E95;&#x5220;&#x9664;&#x4ED3;&#x5E93;&#x4E2D;&#x7684;&#x6587;&#x4EF6;</h3>
 <p>&#x6709;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x80FD;&#x4ECE;&#x7248;&#x672C;&#x5E93;&#x4E2D;&#x6C38;&#x4E45;&#x5220;&#x9664;&#x6587;&#x4EF6;&#xFF08;&#x5982;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x3001;&#x5B58;&#x6709;&#x5BC6;&#x7801;&#x7684;&#x6587;&#x4EF6;&#x7B49;&#x7B49;&#xFF09;&#xFF0C;&#x4E0D;&#x7559;&#x75D5;&#x8FF9;&#xFF0C;&#x4E0D;&#x4EC5;&#x8981;&#x8BA9;&#x5B83;&#x5728;&#x7248;&#x672C;&#x5386;&#x53F2;&#x91CC;&#x770B;&#x4E0D;&#x51FA;&#x6765;&#xFF0C;&#x8FD8;&#x8981;&#x628A;&#x5B83;&#x5360;&#x7528;&#x7684;&#x7A7A;&#x95F4;&#x4E5F;&#x91CA;&#x653E;&#x51FA;&#x6765;&#x3002;&#x6267;&#x884C;&#x5982;&#x4E0B;&#x64CD;&#x4F5C;&#xFF1A;</p>
-<pre><code class="lang-sh">git filter-branch --tree-filter <span class="hljs-string">&apos;rm -rf &#x8981;&#x5220;&#x9664;&#x6587;&#x4EF6;&#x7684;&#x5B8C;&#x6574;&#x8DEF;&#x5F84;&apos;</span> --tag-name-filter cat -- --all
+<pre class="language-"><code class="lang-sh"><span class="token function">git</span> filter-branch --tree-filter <span class="token string">&apos;rm -rf &#x8981;&#x5220;&#x9664;&#x6587;&#x4EF6;&#x7684;&#x5B8C;&#x6574;&#x8DEF;&#x5F84;&apos;</span> --tag-name-filter <span class="token function">cat</span> -- --all
 
-git push origin --tags --force
-git push origin --all --force
+<span class="token function">git</span> push origin --tags --force
+<span class="token function">git</span> push origin --all --force
 
-rm -rf .git/refs/original/
-git reflog expire --expire=now --all
-git gc --prune=now
-git gc --aggressive --prune=now
-du -hs
+<span class="token function">rm</span> -rf .git/refs/original/
+<span class="token function">git</span> reflog expire --expire<span class="token operator">=</span>now --all
+<span class="token function">git</span> gc --prune<span class="token operator">=</span>now
+<span class="token function">git</span> gc --aggressive --prune<span class="token operator">=</span>now
+<span class="token function">du</span> -hs
 </code></pre>
 <p>&#x6CE8;&#x610F;&#xFF0C;filter-branch&#x64CD;&#x4F5C;&#x4E2D;&#xFF0C;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x5FC5;&#x987B;&#x6B63;&#x786E;&#xFF0C;&#x8D1F;&#x8D23;&#x4F1A;&#x51FA;&#x73B0;unchanged&#x7684;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x3002;</p>
 <h2 id="&#x53C2;&#x8003;&#x8D44;&#x6599;">&#x53C2;&#x8003;&#x8D44;&#x6599;</h2>
@@ -532,9 +536,7 @@ du -hs
 <blockquote id="fn_51">
 <sup>51</sup>. &lt;<a href="https://github.com/torvalds/linux&#xFF0C;&#x7531;&#x5927;&#x795E;Linux" target="_blank">https://github.com/torvalds/linux&#xFF0C;&#x7531;&#x5927;&#x795E;Linux</a> Torvalds&#x7BA1;&#x7406;&#x3002;&gt;<a href="#reffn_51" title="Jump back to footnote [51] in the text."> &#x21A9;</a>
 </blockquote>
-<p><div id="page-footer" class="localized-footer"><hr><p><em>By <a href="http://yangzh.cn" target="_blank">yangzh</a>&#xFF0C;&#x4F7F;&#x7528;<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">&#x77E5;&#x8BC6;&#x5171;&#x4EAB; &#x7F72;&#x540D;-&#x76F8;&#x540C;&#x65B9;&#x5F0F;&#x5171;&#x4EAB; 4.0&#x534F;&#x8BAE;</a>&#x53D1;&#x5E03;</em></p>
-</div></p>
-
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> By <a href="http://yangzh.cn" target="_blank">yangzh</a>&#xFF0C;&#x4F7F;&#x7528;<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">&#x77E5;&#x8BC6;&#x5171;&#x4EAB; &#x7F72;&#x540D;-&#x76F8;&#x540C;&#x65B9;&#x5F0F;&#x5171;&#x4EAB; 4.0&#x534F;&#x8BAE;</a>&#x53D1;&#x5E03; </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> &#x6B64;&#x9875;&#x9762;&#x4FEE;&#x8BA2;&#x4E8E;&#xFF1A; 2018-08-25 23:29:15 </span> </footer>
                                 
                                 </section>
                             
@@ -577,7 +579,7 @@ du -hs
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Git简明教程","level":"1.5","depth":1,"next":{"title":"Sublime Text编辑器的使用","level":"1.6","depth":1,"path":"Sublime.md","ref":"Sublime.md","articles":[]},"previous":{"title":"系统包管理工具","level":"1.4","depth":1,"path":"pm.md","ref":"pm.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","sharing-plus","localized-footer","include-codeblock","ace","quiz","-lunr","-search","search-pro","collapsible-menu","bibtex-indexed-cite","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"ace":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"localized-footer":{"filename":"./FOOTER.md","hline":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"bibtex-indexed-cite":{"path":"./"},"quiz":{"labels":{"check":"提交答案","showExplanation":"显示解释","showCorrect":"显示正确答案","explanationHeader":"释义"},"text":{"noChosen":"Choose at least one answer","incomplete":"Some correct answers are missing"},"buttons":{"showCorrect":true,"showExplanation":true}},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","qq","linkedin","qzone","douban"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"yangjh","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"bibCount":0,"variables":{},"title":"开始之前","links":{"sidebar":{"Home":"http://yangzh.cn"}},"bib":[{"citationKey":"SCOTT-2009","entryType":"BOOK","entryTags":{"MONTH":"August","ABSTRACT":"Git is the version control system developed by Linus Torvalds for Linux kernel development. It took the open source world by storm since its inception in 2005, and is used by small development shops and giants like Google, Red Hat, and {IBM}, and of course many open source projects. A book by Git experts to turn you into a Git expert Introduces the world of distributed version control Shows how to build a Git development workflow What you’ll learn Use Git as a programmer or a project leader Become a fluent Git user Use distributed features of Git to the full Acquire the ability to insert Git in the development workflow Migrate programming projects from other {SCMs} to Git Learn how to extend Git Who this book is for This book is for all open source developers: you are bound to encounter Git somewhere in the course of your working life. Proprietary software developers will appreciate Git’s enormous scalability, since it is used for the Linux project, which comprises thousands of developers and testers. Table of Contents Getting Started Git Basics Git Branching Git on the Server Distributed Git Git Tools Customizing Git Git and Other Systems Git Internals","AUTHOR":"Chacon Scott","URL":"http://git-scm.com/book/zh","OWNER":"yangjh","GROUPS":"计算机","ADDRESS":"Berkeley, CA : New York","TIMESTAMP":"2014.10.11","ISBN":"9781430218333","TITLE":"Pro Git","LANGUAGE":"English","PUBLISHER":"Apress","YEAR":"2009","EDITION":"1 edition"}},{"citationKey":"QDL-2012","entryType":"BOOK","entryTags":{"KEYWORDS":"成长, 个人管理, 管理, 管理学, 情商, 思维, 心理, 心理学","AUTHOR":"丹尼尔·平克","OWNER":"yangjh","GROUPS":"研究方法","ADDRESS":"北京","TIMESTAMP":"2015.12.25","ISBN":"978-7-300-14930-1","TITLE":"驱动力","LANGUAGE":"zh","TRANSLATOR":"龚怡屏","PUBLISHER":"中国人民大学出版社","YEAR":"2012","URLDATE":"2015-12-25"}},{"citationKey":"LINUX-2001","entryType":"BOOK","entryTags":{"MONTH":"July","KEYWORDS":"传记, 计算机, 计算机文化, 开源, 人物, 自由软件, linus, Linux","AUTHOR":"李纳斯·托沃兹, 大卫·戴蒙","OWNER":"yangjh","GROUPS":"计算机","ADDRESS":"北京","TIMESTAMP":"2015.12.25","ISBN":"978-7-5006-4342-5","TITLE":"乐者为王","LANGUAGE":"zh","TRANSLATOR":"王秋海","PUBLISHER":"中国青年出版社","YEAR":"2001","URLDATE":"2015-12-25"}},{"citationKey":"FREEMAN-2005","entryType":"BOOK","entryTags":{"MONTH":"January","KEYWORDS":"传记, 费曼, 科普, 科学, 科学家, 人物传记, 物理, 幽默","AUTHOR":"费曼","OWNER":"yangjh","GROUPS":"研究方法","ADDRESS":"北京","TIMESTAMP":"2015.12.26","ISBN":"978-7-108-01619-5","TITLE":"别闹了，费曼先生","LANGUAGE":"zh","TRANSLATOR":"吴程远","PUBLISHER":"生活·读书·新知三联书店","YEAR":"2005","URLDATE":"2015-12-25"}},{"citationKey":"XJBBC-2015","entryType":"ONLINE","entryTags":{"CITEDATE":"2015-12-25","AUTHOR":"萧井陌","URL":"http://zhuanlan.zhihu.com/xiao-jing-mo/19959253","OWNER":"yangjh","GROUPS":"计算机","TIMESTAMP":"2015.12.25","TITLE":"编程入门指南 v1.4 - 萧井陌的专栏 - 知乎专栏","YEAR":"2015","URLDATE":"2015-12-25"}},{"citationKey":"JJG-2005","entryType":"ONLINE","entryTags":{"CITEDATE":"2015/11/23","AUTHOR":"Jesse James Garrett","URL":"https://courses.cs.washington.edu/courses/cse490h/07sp/readings/ajax_adaptive_path.pdf","OWNER":"yangjh","GROUPS":"计算机","TIMESTAMP":"2015.11.23","TITLE":"Ajax: A New Approach to Web Applications","LANGUAGE":"en","YEAR":"2005"}},{"citationKey":"LIAOXUEFENG-2014","entryType":"ONLINE","entryTags":{"CITEDATE":"2014-10-11","AUTHOR":"廖雪峰","URL":"http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000","OWNER":"yangjh","GROUPS":"计算机","TIMESTAMP":"2014.10.11","TITLE":"Git教程","LANGUAGE":"zh","YEAR":"2014","URLDATE":"2014-10-11"}}],"gitbook":"*"},"file":{"path":"git.md","mtime":"2018-08-25T15:29:15.721Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-25T15:29:48.012Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Git简明教程","level":"1.5","depth":1,"next":{"title":"Sublime Text编辑器的使用","level":"1.6","depth":1,"path":"Sublime.md","ref":"Sublime.md","articles":[]},"previous":{"title":"系统包管理工具","level":"1.4","depth":1,"path":"pm.md","ref":"pm.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","sharing-plus","include-codeblock","ace","quiz","-lunr","-search","search-pro","collapsible-menu","bibtex-indexed-cite","-livereload","page-footer-ex","-highlight","url-embed","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"collapsible-menu":{},"ace":{},"page-footer-ex":{"copyright":"By [yangzh](http://yangzh.cn)，使用[知识共享 署名-相同方式共享 4.0协议](https://creativecommons.org/licenses/by-sa/4.0/)发布","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"此页面修订于："},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"fontsettings":{"theme":"white","family":"sans","size":2},"bibtex-indexed-cite":{"path":"./"},"quiz":{"labels":{"check":"提交答案","showExplanation":"显示解释","showCorrect":"显示正确答案","explanationHeader":"释义"},"text":{"noChosen":"Choose at least one answer","incomplete":"Some correct answers are missing"},"buttons":{"showCorrect":true,"showExplanation":true}},"url-embed":{},"include-codeblock":{"check":false,"edit":false,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","qq","linkedin","qzone","douban"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"yangjh","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"bibCount":0,"variables":{},"title":"开始之前","links":{"sidebar":{"Home":"http://yangzh.cn"}},"bib":[{"citationKey":"SCOTT-2009","entryType":"BOOK","entryTags":{"MONTH":"August","ABSTRACT":"Git is the version control system developed by Linus Torvalds for Linux kernel development. It took the open source world by storm since its inception in 2005, and is used by small development shops and giants like Google, Red Hat, and {IBM}, and of course many open source projects. A book by Git experts to turn you into a Git expert Introduces the world of distributed version control Shows how to build a Git development workflow What you’ll learn Use Git as a programmer or a project leader Become a fluent Git user Use distributed features of Git to the full Acquire the ability to insert Git in the development workflow Migrate programming projects from other {SCMs} to Git Learn how to extend Git Who this book is for This book is for all open source developers: you are bound to encounter Git somewhere in the course of your working life. Proprietary software developers will appreciate Git’s enormous scalability, since it is used for the Linux project, which comprises thousands of developers and testers. Table of Contents Getting Started Git Basics Git Branching Git on the Server Distributed Git Git Tools Customizing Git Git and Other Systems Git Internals","AUTHOR":"Chacon Scott","URL":"http://git-scm.com/book/zh","OWNER":"yangjh","GROUPS":"计算机","ADDRESS":"Berkeley, CA : New York","TIMESTAMP":"2014.10.11","ISBN":"9781430218333","TITLE":"Pro Git","LANGUAGE":"English","PUBLISHER":"Apress","YEAR":"2009","EDITION":"1 edition"}},{"citationKey":"QDL-2012","entryType":"BOOK","entryTags":{"KEYWORDS":"成长, 个人管理, 管理, 管理学, 情商, 思维, 心理, 心理学","AUTHOR":"丹尼尔·平克","OWNER":"yangjh","GROUPS":"研究方法","ADDRESS":"北京","TIMESTAMP":"2015.12.25","ISBN":"978-7-300-14930-1","TITLE":"驱动力","LANGUAGE":"zh","TRANSLATOR":"龚怡屏","PUBLISHER":"中国人民大学出版社","YEAR":"2012","URLDATE":"2015-12-25"}},{"citationKey":"LINUX-2001","entryType":"BOOK","entryTags":{"MONTH":"July","KEYWORDS":"传记, 计算机, 计算机文化, 开源, 人物, 自由软件, linus, Linux","AUTHOR":"李纳斯·托沃兹, 大卫·戴蒙","OWNER":"yangjh","GROUPS":"计算机","ADDRESS":"北京","TIMESTAMP":"2015.12.25","ISBN":"978-7-5006-4342-5","TITLE":"乐者为王","LANGUAGE":"zh","TRANSLATOR":"王秋海","PUBLISHER":"中国青年出版社","YEAR":"2001","URLDATE":"2015-12-25"}},{"citationKey":"FREEMAN-2005","entryType":"BOOK","entryTags":{"MONTH":"January","KEYWORDS":"传记, 费曼, 科普, 科学, 科学家, 人物传记, 物理, 幽默","AUTHOR":"费曼","OWNER":"yangjh","GROUPS":"研究方法","ADDRESS":"北京","TIMESTAMP":"2015.12.26","ISBN":"978-7-108-01619-5","TITLE":"别闹了，费曼先生","LANGUAGE":"zh","TRANSLATOR":"吴程远","PUBLISHER":"生活·读书·新知三联书店","YEAR":"2005","URLDATE":"2015-12-25"}},{"citationKey":"XJBBC-2015","entryType":"ONLINE","entryTags":{"CITEDATE":"2015-12-25","AUTHOR":"萧井陌","URL":"http://zhuanlan.zhihu.com/xiao-jing-mo/19959253","OWNER":"yangjh","GROUPS":"计算机","TIMESTAMP":"2015.12.25","TITLE":"编程入门指南 v1.4 - 萧井陌的专栏 - 知乎专栏","YEAR":"2015","URLDATE":"2015-12-25"}},{"citationKey":"JJG-2005","entryType":"ONLINE","entryTags":{"CITEDATE":"2015/11/23","AUTHOR":"Jesse James Garrett","URL":"https://courses.cs.washington.edu/courses/cse490h/07sp/readings/ajax_adaptive_path.pdf","OWNER":"yangjh","GROUPS":"计算机","TIMESTAMP":"2015.11.23","TITLE":"Ajax: A New Approach to Web Applications","LANGUAGE":"en","YEAR":"2005"}},{"citationKey":"LIAOXUEFENG-2014","entryType":"ONLINE","entryTags":{"CITEDATE":"2014-10-11","AUTHOR":"廖雪峰","URL":"http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000","OWNER":"yangjh","GROUPS":"计算机","TIMESTAMP":"2014.10.11","TITLE":"Git教程","LANGUAGE":"zh","YEAR":"2014","URLDATE":"2014-10-11"}}],"gitbook":"*"},"file":{"path":"git.md","mtime":"2018-08-25T15:29:15.721Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-03T02:11:27.641Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
