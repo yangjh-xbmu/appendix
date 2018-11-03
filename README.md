@@ -2,4 +2,4 @@
 
 在这一部分，主要介绍与课程学习紧密相关，但又不属于其知识体系的内容。
 
-{% include "content.md" %}
+{% include "SUMMARY.md" %}
