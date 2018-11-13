@@ -88,10 +88,10 @@ VSCode快捷键和ST类似，并且大多数功能的都可以设置快捷键，
 
 ## 实用插件
 
-1. **markdownlint**，Markdown语法检查及风格提示插件；
-1. **Snippetica for Markdown**，Markdown snippet，减少书写Markdown文件时键入量；
-1. **Live Server**，新建一个可以实时刷新的本地服务器，大大减少开发者的重复性动作，文件修改后，就可在页面中看到更新后的效果；
-1. **ESLint**，功能强大的js语法提示工具，减少js代码调试成本；
+1. **markdownlint**，Markdown语法检查及风格提示插件。
+1. **Snippetica for Markdown**，Markdown snippet，减少书写Markdown文件时键入量。
+1. **Live Server**，新建一个可以实时刷新的本地服务器，大大减少开发者的重复性动作，文件修改后，就可在页面中看到更新后的效果。
+1. **ESLint**，功能强大的js语法提示工具，减少js代码调试成本。
 1. **phpcs**, 按照PSR规则进行语法提示，需要安装pear及CodeSniffer，并进行php.ini配置。
 1. **php cs fixer**, 按照PSR规则或自定义规则自动进行PHP文档规范化，比phpfmt更符合psr规范，但无法自动对齐。
 1. **better align**，自动对齐，需要设置快捷键。
