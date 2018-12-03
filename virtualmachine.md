@@ -150,13 +150,13 @@ vagrant ssh
 
 #### 虚拟机操作
 
-|命令|效果|
-|----|----|
-|vagrant suspend|保存虚拟机状态到硬盘|
-|vagrant halt|关闭虚拟机|
-|vagrant reload|重启虚拟机|
-|vagrant resume|激活挂起的虚拟机|
-|vagrant destroy|销毁当前项目创建的虚拟机|
+|      命令       |           效果           |
+| --------------- | ------------------------ |
+| vagrant suspend | 保存虚拟机状态到硬盘     |
+| vagrant halt    | 关闭虚拟机               |
+| vagrant reload  | 重启虚拟机               |
+| vagrant resume  | 激活挂起的虚拟机         |
+| vagrant destroy | 销毁当前项目创建的虚拟机 |
 
 ## 如何创建自己的虚拟机镜像包
 
