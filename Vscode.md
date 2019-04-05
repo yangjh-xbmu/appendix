@@ -12,6 +12,10 @@
 
 与ST只提供基础编辑功能相比，VSCode内置了很多功能，比如emmet、格式化代码、git等等，使得其更容易被初学者接受。
 
+### 优秀的文档
+
+VS Code编辑器的官方文档，覆盖了编辑器使用的各个方面，且有视频讲解，极大地降低了用户的学习成本。
+
 ## VS Code安装
 
 安装VSCode非常简单，从官方网站下载合适的安装包即可，VSCode目前支持Windows、linux和Mac系统。
@@ -101,3 +105,7 @@ VSCode快捷键和ST类似，并且大多数功能的都可以设置快捷键，
 1. **phpcs**, 按照PSR规则进行语法提示，需要安装pear及CodeSniffer，并进行php.ini配置。
 1. **php cs fixer**, 按照PSR规则或自定义规则自动进行PHP文档规范化，比phpfmt更符合psr规范，但无法自动对齐。
 1. **better align**，自动对齐，需要设置快捷键。
+
+## 参考资料
+
+1. [VS Code 官方文档](https://code.visualstudio.com/docs/)
