@@ -28,7 +28,6 @@ docker --version
 
 若能输出版本号，说明 Docker 安装成功。安装完成后，最好设置国内镜像站点<https://registry.docker-cn.com>信息，以加快镜像下载速度。
 
-
 ## 学习资料
 
 1. <https://docker_practice.gitee.io/>

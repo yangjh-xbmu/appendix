@@ -17,6 +17,3 @@
 * [网站服务器搭建](server.md)
 * [Git-Ftp](gitftp.md)
 * [Pandoc](pandoc.md)
-
-
-

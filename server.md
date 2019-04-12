@@ -2,11 +2,11 @@
 
 我们这里所说的服务器是指运行在互联网上，提供特定服务（如www、ftp等等）的一台或一组计算机。随着信息技术的发展，网络服务器经历了自建、托管、虚拟主机到现在的云主机，相比之前，云主机具有一系列的优势，如自主安装操作系统、自主搭设软件环境，用户自由度很高。因此，对于网络应用开发者而言，非常有必要掌握一定的服务器运维知识。
 
-服务器的搭建有两种思路，一种是自己根据需要选择安装合适、必要的软件包；另外一种是使用服务器面板，如宝塔面板、amh面板。第二种方式更加适合初学者，也是效率较高的一种选择。
+服务器的搭建有两种思路，一种是自己根据需要选择安装合适、必要的软件包；另外一种是使用服务器面板，如宝塔面板、amh 面板。第二种方式更加适合初学者，也是效率较高的一种选择。
 
 ## 创建CentOS虚拟机
 
-使用虚拟机技术，创建centos/7虚拟机，启动虚拟机后，先使用yum进行更新，确保软件包保持最新状态。
+使用虚拟机技术，创建`centos/7`虚拟机，启动虚拟机后，先使用 yum 进行更新，确保软件包保持最新状态。
 
 虚拟机配置如下：
 
@@ -94,7 +94,7 @@ sudo vi /etc/nginx/conf.d/php.basic.conf
 
 在这个配置文件中，写入如下信息：
 
-```conf
+```bash
 server {
   listen        80;
   server_name   192.168.33.10;
@@ -115,7 +115,7 @@ server {
 
 ### 安装phpMyAdmin
 
-在phpMyAdmin官方网站下载压缩包，解压到合适目录，依照提示，进行必要的设置。
+在 phpMyAdmin 官方网站下载压缩包，解压到合适目录，依照提示，进行必要的设置。
 
 ### 安装nodejs
 
@@ -137,16 +137,16 @@ export NODE_HOME=/usr/local/node
 export PATH=$NODE_HOME/bin:$PATH
 ```
 
-重新登录shell，完成nodejs安装。
+重新登录 shell，完成 nodejs 安装。
 
-### 安装yarn
+### 安装 yarn
 
 ```sh
 curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
 sudo yum install yarn
 ```
 
-### 安装MongoDB
+### 安装 MongoDB
 
 CentOS中自带源中的MongoDB版本过低，因此，我们先添加自定义源：
 

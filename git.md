@@ -1,12 +1,12 @@
-# Git简明教程
+# Git 简明教程
 
 > Always use source code control.---Andrew Hunt 程序员修炼之道
 
-本教程的首要目的，是使读者能用Git这个最流行的分布式版本控制系统管理自己的项目。本教程的另外一个目的，是让选修课程的同学能通过Git工具轻松获取课程的相关文件（代码、教案等）。
+本教程的首要目的，是使读者能用 Git 这个最流行的分布式版本控制系统管理自己的项目。本教程的另外一个目的，是让选修课程的同学能通过 Git 工具轻松获取课程的相关文件（代码、教案等）。
 
-本教程并不能使你成为Git工具的专家，很多高级命令并不涉及，如果想进一步学习，请阅读[《Pro Git》](http://git-scm.com/book/zh){{ "Scott-2009" | cite }}。
+本教程并不能使你成为 Git 工具的专家，很多高级命令并不涉及，如果想进一步学习，请阅读 [《Pro Git》](http://git-scm.com/book/zh){{ "Scott-2009" | cite }}。
 
-## Git简介
+## Git 简介
 
 ### 什么是版本控制
 
@@ -34,51 +34,51 @@
 
 于是分布式版本控制系统（ Distributed Version Control System，简称 DVCS ）面世了。在这类系统中，像 Git，Mercurial，Bazaar 以及 Darcs 等，客户端并不只提取最新版本的文件快照，而是把代码仓库完整地镜像下来。这么一来，任何一处协同工作用的服务器发生故障，事后都可以用任何一个镜像出来的本地仓库恢复。因为每一次的提取操作，实际上都是一次对代码仓库的完整备份。
 
-### Git简史
+### Git 简史
 
-同生活中的许多伟大事件一样，Git 诞生于一个极富纷争大举创新的年代。Linux 内核开源项目有着为数众广的参与者。绝大多数的 Linux 内核维护工作都花在了提交补丁和保存归档的繁琐事务上（1991－2002年间）。到 2002 年，整个项目组开始启用分布式版本控制系统 BitKeeper 来管理和维护代码。
+同生活中的许多伟大事件一样，Git 诞生于一个极富纷争大举创新的年代。Linux 内核开源项目有着为数众广的参与者。绝大多数的 Linux 内核维护工作都花在了提交补丁和保存归档的繁琐事务上（1991－2002 年间）。到 2002 年，整个项目组开始启用分布式版本控制系统 BitKeeper 来管理和维护代码。
 
 到了 2005 年，开发 BitKeeper 的商业公司同 Linux 内核开源社区的合作关系结束，他们收回了免费使用 BitKeeper 的权力。这就迫使 Linux 开源社区（特别是 Linux 的缔造者 Linus Torvalds ）不得不吸取教训，只有开发一套属于自己的版本控制系统才不至于重蹈覆辙。他们对新的系统制订了若干目标：
 
-40. 速度
-41. 简单的设计
-42. 对非线性开发模式的强力支持（允许上千个并行开发的分支）
-43. 完全分布式
-44. 有能力高效管理类似 Linux 内核一样的超大规模项目（速度和数据量）
+1. 速度
+1. 简单的设计
+1. 对非线性开发模式的强力支持（允许上千个并行开发的分支）
+1. 完全分布式
+1. 有能力高效管理类似 Linux 内核一样的超大规模项目（速度和数据量）
 
-于是Linus花了两周时间自己用C写了一个分布式版本控制系统，这就是Git。一个月之内，Linux系统的源码已经由Git管理了！什么是大牛？大家可以体会一下。{{ "liaoxuefeng-2014" | cite }}
+于是 Linus 花了两周时间自己用 C 写了一个分布式版本控制系统，这就是 Git。一个月之内，Linux 系统的源码已经由 Git 管理了！什么是大牛？大家可以体会一下。{{ "liaoxuefeng-2014" | cite }}
 
 自诞生于 2005 年以来，Git 日臻成熟完善，在高度易用的同时，仍然保留着初期设定的目标。它的速度飞快，极其适合管理大项目，它还有着令人难以置信的非线性分支管理系统，可以应付各种复杂的项目开发需求。
 
-Git 版本管理还有一点特别需要说明，就是它的分布式设计非常巧妙和高效，每一个安装了Git的计算机，既是服务端，又是客户端；既能在联网情况下使用，又能在断网的情况使用。
+Git 版本管理还有一点特别需要说明，就是它的分布式设计非常巧妙和高效，每一个安装了 Git 的计算机，既是服务端，又是客户端；既能在联网情况下使用，又能在断网的情况使用。
 
-Git迅速成为最流行的分布式版本控制系统，尤其是2008年，GitHub网站上线了，它为开源项目免费提供Git存储，无数开源项目开始迁移至GitHub，包括Linux[^51]，jQuery，PHP，Ruby等等。
+Git 迅速成为最流行的分布式版本控制系统，尤其是 2008 年，GitHub 网站上线了，它为开源项目免费提供 Git 存储，无数开源项目开始迁移至 GitHub，包括 Linux[^51]，jQuery，PHP，Ruby 等等。
 
-历史就是这么偶然，如果不是当年BitMover公司威胁Linux社区，可能现在我们就没有免费而超级好用的Git了。
+历史就是这么偶然，如果不是当年 BitMover 公司威胁 Linux 社区，可能现在我们就没有免费而超级好用的 Git 了。
 
-## 安装Git
+## 安装 Git
 
-Mac OS 最近的版本中，已经内置了git工具，无需安装。
+Mac OS 最近的版本中，已经内置了 git 工具，无需安装。
 
-Windows 上安装 Git 非常简单，可以到 [GitHub 的 msysGit 项目](http://msysgit.github.io/)下载 安装文件。完成安装之后，就可以使用命令行的 Git 工具（已经自带了 ssh 客户端）了，另外还有一个图形界面的 Git 项目管理工具。此外，windows用户还可以安装cmder，cmder内置了git，建议使用cmder，更加接近于终端的体验。
+Windows 上安装 Git 非常简单，可以到 [GitHub 的 msysGit 项目](http://msysgit.github.io/) 下载 安装文件。完成安装之后，就可以使用命令行的 Git 工具（已经自带了 ssh 客户端）了，另外还有一个图形界面的 Git 项目管理工具。此外，Windows 用户还可以安装 Cmder，Cmder 内置了 git，建议使用 Cmder，更接近于 Linux 终端的体验。
 
-## 用Git获取代码
+## 用 Git 获取代码
 
 获取已有项目的内容，分为两种情况，即首次获取和更新数据。
 
 ### 首次获取代码
 
-第一次获取已有项目数据的并不复杂，首先在想要保存项目代码的文件夹上按右键，选择Git Bash，进入Git命令行。然后在命令行中执行以下命令，即可获得托管在远程网站中的项目文件（包括代码和版本仓库），如：
+第一次获取已有项目数据的并不复杂，首先在想要保存项目代码的文件夹上按右键，选择 Git Bash，进入 Git 命令行。然后在命令行中执行以下命令，即可获得托管在远程网站中的项目文件（包括代码和版本仓库），如：
 
 ```sh
 git clone https://git.oschina.net/yangjh/LearningPHP.git
 ```
 
-其中第二个参数[https://git.oschina.net/yangjh/LearningPHP.git](https://git.oschina.net/yangjh/LearningPHP.git)就是公布在托管网站中的项目地址。上述命令执行完后，用户将得到项目文件。
+其中第二个参数 [https://git.oschina.net/yangjh/LearningPHP.git](https://git.oschina.net/yangjh/LearningPHP.git) 就是公布在托管网站中的项目地址。上述命令执行完后，用户将得到项目文件。
 
 ### 获取远程仓库的更新代码
 
-在完成了对项目仓库的首次克隆后，想要获取项目的最新代码，只需在Git Bash命令行中执行如下操作：
+在完成了对项目仓库的首次克隆后，想要获取项目的最新代码，只需在 Git Bash 命令行中执行如下操作：
 
 ```sh
 git pull
@@ -90,17 +90,17 @@ git pull
 git clone -b <branch name> [remote repository address]
 ```
 
-主要就是在clone的时候，后面添加branch的信息。如克隆远程仓库`https://git.coding.net/adamyang/blog.git`中的coding-pages分支：
+主要就是在 clone 的时候，后面添加 branch 的信息。如克隆远程仓库`https://git.coding.net/adamyang/blog.git`中的 coding-pages 分支：
 
 ```sh
 git clone -b coding-pages https://git.coding.net/adamyang/blog.git
 ```
 
-## 用Git管理自己的项目代码
+## 用 Git 管理自己的项目代码
 
-### 设置Git
+### 设置 Git
 
-使用 Git 工作之前，我们需要做个一次性的配置，这样Git就能跟踪到谁做了修改：
+使用 Git 工作之前，我们需要做个一次性的配置，这样 Git 就能跟踪到谁做了修改：
 
 ```sh
 git config --global user.name "your_username"
@@ -113,29 +113,29 @@ git config --global user.email "your_email@domain.com"
 git config --global push.default simple
 ```
 
-### 首次建立Git仓库
+### 首次建立 Git 仓库
 
-使用Git管理自己的项目代码，也分为两种情况，首次建立仓库和提交更新内容。
+使用 Git 管理自己的项目代码，也分为两种情况，首次建立仓库和提交更新内容。
 
-初始化本地项目。在相应项目的文件夹上按右键，选择Git Init here。或者进入Git Bash命令行中执行
+初始化本地项目。在相应项目的文件夹上按右键，选择 Git Init here。或者进入 Git Bash 命令行中执行
 
 ```sh
 git init
 ```
 
-在项目文件夹上按右键，选择Git add all files now，将文件夹中的所有文件添加到本地仓库中。或者进入Git Bash命令行中执行
+在项目文件夹上按右键，选择 Git add all files now，将文件夹中的所有文件添加到本地仓库中。或者进入 Git Bash 命令行中执行
 
 ```sh
 git add .
 ```
 
-在项目文件夹上按右键，选择Git commit tool，在随后弹出的对话框中输入更新说明，提交。或者进入Git Bash命令行中执行
+在项目文件夹上按右键，选择 Git commit tool，在随后弹出的对话框中输入更新说明，提交。或者进入 Git Bash 命令行中执行
 
 ```sh
-git commit -m ".....更新说明"
+git commit -m "..... 更新说明"
 ```
 
-如果想对本地仓库建立远程的镜像，即将本地仓库托管到github之类的站点，应先到此类站点注册帐号，建立远程仓库，然后执行如下命令建立本地仓库和远程仓库的对应关系：
+如果想对本地仓库建立远程的镜像，即将本地仓库托管到 github 之类的站点，应先到此类站点注册帐号，建立远程仓库，然后执行如下命令建立本地仓库和远程仓库的对应关系：
 
 ```sh
 git add remote origin https://仓库地址
@@ -154,61 +154,65 @@ git push -u origin master
 完成上述操作后，以后的工作流程就更简洁了：
 
 1. 编写或者修改代码，保存文件。
-2. 添加更新文件到本地仓库，选择Git add all files now即可。或者进入Git Bash命令行中执行
-```sh
-git add .
-```
-3. 选择Git commit tool为这些更新添加说明注释。或者进入Git Bash命令行中执行
-```sh
-git commit -m ".....更新说明"
-```
-163. 执行Git push将本地仓库同步到远程仓库。
+2. 添加更新文件到本地仓库，选择`Git add all files now`即可。或者进入 Git Bash 命令行中执行
 
-至此，我们已经能用Git工具来管理和追踪项目的变化了。
+    ```sh
+    git add .
+    ```
 
-## 使用GitHub Pages建立个人站点
+3. 选择`Git commit tool`为这些更新添加说明注释。或者进入 Git Bash 命令行中执行：
 
-GitHub 不仅能托管代码，还可以通过GitHub Pages工具免费建立静态站点，非常适合前端开发人员学习、展示作品。具体步骤如下：
+    ```sh
+    git commit -m "..... 更新说明"
+    ```
 
-171. 在Github站点注册帐号，邮箱验证激活。
-172. 创建仓库。在GitHub注册登陆后，创建以自己用户名开头的“username.github.io”的公开仓库，其中username必须和GitHub注册时的用户名一致，否则无法使用Github page服务。
-173. 克隆仓库。进入到想要存储项目的文件夹，执行如下命令克隆仓库：
+4. 执行 Git push 将本地仓库同步到远程仓库。
 
-```sh
-git clone https://github.com/username/username.github.io.git
-```
+至此，我们已经能用 Git 工具来管理和追踪项目的变化了。
 
-输入用户名、密码，完成克隆操作后，应该在文件夹生成“username.github.io”的子文件夹，之后个人站点的文件和操作都在该文件夹中完成。
+## 使用 GitHub Pages 建立个人站点
 
-180. 创建首页。进入本地“username.github.io”文件夹，使用编辑器创建index.html，这个文件将是个人站点的首页。
-181. 提交代码到GitHub。完成页面编辑后，就可以发布代码到GitHub：
+GitHub 不仅能托管代码，还可以通过 GitHub Pages 工具免费建立静态站点，非常适合前端开发人员学习、展示作品。具体步骤如下：
 
-```sh
-git add --all
-git commit -m "Initial commit"
-git push -u origin master
-```
+1. 在 Github 站点注册帐号，邮箱验证激活。
+2. 创建仓库。在 GitHub 注册登陆后，创建以自己用户名开头的“username.github.io”的公开仓库，其中 username 必须和 GitHub 注册时的用户名一致，否则无法使用 Github page 服务。
+3. 克隆仓库。进入到想要存储项目的文件夹，执行如下命令克隆仓库：
 
-如果是首次运行git工具，还要进行全局性用户名和邮箱的声明：
+    ```sh
+    git clone https://github.com/username/username.github.io.git
+    ```
 
-```sh
-git config --global user.email "username@mail.com"
-git config --global user.name "username"
-```
+    输入用户名、密码，完成克隆操作后，应该在文件夹生成“username.github.io”的子文件夹，之后个人站点的文件和操作都在该文件夹中完成。
 
-上述操作完成后，本地仓库中的代码将推送到GitHub远程仓库。
+1. 创建首页。进入本地“username.github.io”文件夹，使用编辑器创建 index.html，这个文件将是个人站点的首页。
+1. 提交代码到 GitHub。完成页面编辑后，就可以发布代码到 GitHub：
 
-197. 浏览站点。启动浏览器，访问如下地址，即可浏览站点：
+    ```sh
+    git add --all
+    git commit -m "Initial commit"
+    git push -u origin master
+    ```
 
-```sh
-http://username.github.io
-```
+    如果是首次运行 git 工具，还要进行全局性用户名和邮箱的声明：
+
+    ```sh
+    git config --global user.email "username@mail.com"
+    git config --global user.name "username"
+    ```
+
+    上述操作完成后，本地仓库中的代码将推送到 GitHub 远程仓库。
+
+1. 浏览站点。启动浏览器，访问如下地址，即可浏览站点：
+
+    ```sh
+    http://username.github.io
+    ```
 
 ## Git 分支管理
 
-与其它版本控制系统不同，Git 鼓励使用分支与合并。理解Git分支特性，从改变你的开发方式和工作流程。
+与其它版本控制系统不同，Git 鼓励使用分支与合并。理解 Git 分支特性，从改变你的开发方式和工作流程。
 
-Git 的分支非常非常轻量！Git 分支的实质上是包含所指对象校验和（长度为 40 的 SHA-1 值字符串）的文件，仅此而已，这样的设计，使得Git创建再多分的支也不会造成储存或内存上的开销，所以许多 Git 爱好者传颂：早建分支！多用分支！
+Git 的分支非常非常轻量！Git 分支的实质上是包含所指对象校验和（长度为 40 的 SHA-1 值字符串）的文件，仅此而已，这样的设计，使得 Git 创建再多分的支也不会造成储存或内存上的开销，所以许多 Git 爱好者传颂：早建分支！多用分支！
 
 在将分支和提交记录结合起来后，我们会看到两者如何协作。现在只要记住使用分支其实就相当于在说：“我想基于这个提交以及它所有的父提交进行新的工作。”
 
@@ -220,19 +224,19 @@ Git 的分支非常非常轻量！Git 分支的实质上是包含所指对象校
 
 ### 创建分支
 
-使用git branch 就能创建分支：
+使用 git branch 就能创建分支：
 
 ```bash
-$ git branch testing      // 在当前分支的基础上，创建testing分支，但并没有切换到testing分支
-$ git checkout -b iss53   // 在当前分支的基础上，创建iss53分支，并切换到iss53分支
+git branch testing      // 在当前分支的基础上，创建 testing 分支，但并没有切换到 testing 分支
+git checkout -b iss53   // 在当前分支的基础上，创建 iss53 分支，并切换到 iss53 分支
 ```
 
 ### 查看分支
 
-当我们使用Git工具，创造本地仓库时，Git会默认创建一个名为“master”的本地分支。使用`git branch`命令可以查看当前所处的分支：
+当我们使用 Git 工具，创造本地仓库时，Git 会默认创建一个名为“master”的本地分支。使用`git branch`命令可以查看当前所处的分支：
 
 ```bash
-$ git branch
+git branch
 
   master
   testing
@@ -243,42 +247,42 @@ $ git branch
 
 ### 合并分支
 
-假设你已经修正了 iss53 问题，并且打算将你的工作合并入 master 分支。为此，你需要合并 iss53 分支到 master 分支，使用merge命令可以进行分支的合并，合并的时候，一定要注意要在合并到的分支（如：master）上进行工作。
+假设你已经修正了 iss53 问题，并且打算将你的工作合并入 master 分支。为此，你需要合并 iss53 分支到 master 分支，使用 merge 命令可以进行分支的合并，合并的时候，一定要注意要在合并到的分支（如：master）上进行工作。
 
 ```bash
-$ git checkout master                   // 先切换到master分支
+$ git checkout master                   // 先切换到 master 分支
 
 Switched to branch 'master'
 
-$ git merge iss53                       // 合并iss53分支到当前（master）分支
+$ git merge iss53                       // 合并 iss53 分支到当前（master）分支
 
 Merge made by the 'recursive' strategy.
 index.html |    1 +
 1 file changed, 1 insertion(+)
 ```
 
-执行merge操作的时候，如遇到需要人工决定内容的变动时，Git工具会提示你进行人工操作，对内容进行修改后，合并才能成功。
+执行 merge 操作的时候，如遇到需要人工决定内容的变动时，Git 工具会提示你进行人工操作，对内容进行修改后，合并才能成功。
 
 ### 如何删除分支
 
-当某个分支的使命完成后，可以使用branch命令进行删除：
+当某个分支的使命完成后，可以使用 branch 命令进行删除：
 
 ```bash
 $ git branch -d hotfix
 Deleted branch hotfix (3a0874c).
 ```
 
-在`-d`参数后加上需要删除的分支即可，如果需要删除的分支中有没有合并到父分支的内容，Git工具会进行提示。如果该分支的内容已经合并，则会执行分支删除操作。
+在`-d`参数后加上需要删除的分支即可，如果需要删除的分支中有没有合并到父分支的内容，Git 工具会进行提示。如果该分支的内容已经合并，则会执行分支删除操作。
 
 ### 分支管理最佳实践
 
-因为新建分支很容易，所以在团队协作时，应该约定如何建立分支，如何为分支命名等规范，[Vincent Driessen](https://nvie.com/posts/a-successful-git-branching-model/)在2010年提出了一个广受好评的分支管理模型：
+因为新建分支很容易，所以在团队协作时，应该约定如何建立分支，如何为分支命名等规范，[Vincent Driessen](https://nvie.com/posts/a-successful-git-branching-model/) 在 2010 年提出了一个广受好评的分支管理模型：
 
 ![git flow](./images/git-model@2x.png)
 
-其核心是创建开发分支，将日常开发生成的代码和正式发布运行的代码分离起来，即日常工作都在`develop`分支完成，测试无误后，将其合并到`master`分支。详细情况请阅读[一个成功的Git分支模型](https://nvie.com/posts/a-successful-git-branching-model/)。
+其核心是创建开发分支，将日常开发生成的代码和正式发布运行的代码分离起来，即日常工作都在`develop`分支完成，测试无误后，将其合并到`master`分支。详细情况请阅读 [一个成功的 Git 分支模型](https://nvie.com/posts/a-successful-git-branching-model/)。
 
-## Git进阶
+## Git 进阶
 
 初学者可先不阅读这一节内容，在有需求的时候再深入学习。
 
@@ -293,15 +297,15 @@ git config user.name "xxx"
 git config user.email "xxx@163.com"
 ```
 
-查看Git配置信息，包括全局配置和项目当前配置，二者都有的情况下，**Git优先使用项目当前配置**：
+查看 Git 配置信息，包括全局配置和项目当前配置，二者都有的情况下，**Git 优先使用项目当前配置**：
 
 ```sh
 git config --list
 ```
 
-### 如何清除git缓存
+### 如何清除 git 缓存
 
-当我们修改了仓库密码时，由于git会缓存之前的密码，可能会出现授权错误，这是可以运行
+当我们修改了仓库密码时，由于 git 会缓存之前的密码，可能会出现授权错误，这是可以运行
 
 ```sh
 git credential-cache exit
@@ -311,9 +315,9 @@ git credential-cache exit
 
 ### 忽略项目中的特定文件
 
-在项目中，总会有一些特定的文件不想采用Git工具进行版本的控制，如临时文件、编译时产生的过渡文件或包含帐号信息的文件，对于这类文件，Git提供了一个非常高效灵活的方式进行屏蔽，即创建一个`.gitignore`文件。
+在项目中，总会有一些特定的文件不想采用 Git 工具进行版本的控制，如临时文件、编译时产生的过渡文件或包含帐号信息的文件，对于这类文件，Git 提供了一个非常高效灵活的方式进行屏蔽，即创建一个`.gitignore`文件。
 
-开发者还可通过[https://www.gitignore.io/](https://www.gitignore.io/)工具生成合适的`.gitignore`文件。
+开发者还可通过 [https://www.gitignore.io/](https://www.gitignore.io/) 工具生成合适的`.gitignore`文件。
 
 在这个文件中，项目拥有者只需将不想进入版本仓库的文件列举出来即可，支持通配符。例如：
 
@@ -328,15 +332,19 @@ test/*
 
 需要提醒的是，当`.gitignore`文件更改后，并不能立即起效，需要进行如下操作：
 
-224. 清除缓存。命令为：
-```sh
- git rm -r --cached .
-```
-228. 添加文件到仓库。
-```sh
-git add .
-```
-之后就可添加说明、推送。
+1. 清除缓存。命令为：
+
+    ```sh
+    git rm -r --cached .
+    ```
+
+2. 添加文件到仓库：
+
+    ```sh
+    git add .
+    ```
+
+3. 之后就可添加说明、推送。
 
 ### 彻底删除仓库中的文件
 
@@ -355,11 +363,11 @@ git gc --aggressive --prune=now
 du -hs
 ```
 
-注意，filter-branch操作中，文件路径必须正确，负责会出现unchanged的错误信息。
+注意，filter-branch 操作中，文件路径必须正确，负责会出现 unchanged 的错误信息。
 
 ## 参考资料
 
-1. [一个成功的Git分支模型](https://nvie.com/posts/a-successful-git-branching-model/)
+1. [一个成功的 Git 分支模型](https://nvie.com/posts/a-successful-git-branching-model/)
 1. [在线练习沙盒](https://learngitbranching.js.org/)
 
-[^51]: <https://github.com/torvalds/linux，由大神Linux Torvalds管理。>
+[^51]: <https://github.com/torvalds/linux，由大神 Linux Torvalds 管理。>
