@@ -7,6 +7,7 @@
 * [Git 简明教程](git.md)
 * [Sublime Text 编辑器的使用](Sublime.md)
 * [Visual Studio Code 编辑器的使用](Vscode.md)
+* [PyCharm 编辑器的使用](PyCharm.md)
 * [Linux 操作系统](linux.md)
 * [虚拟机](virtualmachine.md)
 * [Docker](docker/intro.md)
@@ -16,3 +17,6 @@
 * [网站服务器搭建](server.md)
 * [Git-Ftp](gitftp.md)
 * [Pandoc](pandoc.md)
+
+
+

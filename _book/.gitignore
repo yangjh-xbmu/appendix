@@ -3,3 +3,4 @@
 *.sublime-project
 .vscode
 node_modules
+.idea
