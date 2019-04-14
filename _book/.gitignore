@@ -1,0 +1,6 @@
+*~
+.DS_Store
+*.sublime-project
+.vscode
+node_modules
+.idea
