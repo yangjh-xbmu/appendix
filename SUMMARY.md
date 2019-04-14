@@ -10,7 +10,7 @@
   * [使用 Git 管理项目的基本流程](git/flow.md)
   * [Git 分支操作](git/branch.md)
   * [Git 使用中的常见问题](git/faq.md)
-  * [使用 Pages 服务建立个人静态网站](git/pages.md)
+  * [使用 Pages 服务建立静态网站](git/pages.md)
 * [Sublime Text 编辑器的使用](Sublime.md)
 * [Visual Studio Code 编辑器的使用](Vscode.md)
 * [PyCharm 编辑器的使用](PyCharm.md)
