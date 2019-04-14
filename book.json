@@ -19,6 +19,7 @@
         "bibtex-indexed-cite",
         "-livereload",
         "page-footer-ex",
+        "mermaid-flow",
         "-highlight",
         "url-embed",
         "prism"
