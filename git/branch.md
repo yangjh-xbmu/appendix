@@ -70,6 +70,6 @@ Deleted branch hotfix (3a0874c).
 
 因为新建分支很容易，所以在团队协作时，应该约定如何建立分支，如何为分支命名等规范，[Vincent Driessen](https://nvie.com/posts/a-successful-git-branching-model/) 在 2010 年提出了一个广受好评的分支管理模型：
 
-![git flow](./images/git-model@2x.png)
+![git flow](./../images/git-model@2x.png)
 
 其核心是创建开发分支，将日常开发生成的代码和正式发布运行的代码分离起来，即日常工作都在`develop`分支完成，测试无误后，将其合并到`master`分支。详细情况请阅读 [一个成功的 Git 分支模型](https://nvie.com/posts/a-successful-git-branching-model/)。

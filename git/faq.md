@@ -2,7 +2,7 @@
 
 初学者可先不阅读这一节内容，在有需求的时候再深入学习。
 
-## 如何在 push 时不输入密码
+## 如何在 push 时不输入用户名和密码？
 
 在命令行中，执行如下指令，可全局性地让 Git 工具记住个人用户名和密码信息：
 
@@ -11,6 +11,18 @@ git config --global credential.helper store
 ```
 
 还可以使用SSH方式，配置公钥信息后，也可以不输入密码访问。
+
+## 如何推送到两个远程仓库？
+
+假设已经有了一个远程仓库（gitee.com），还需要将其同时推动到另外一个远程仓库（github.com）。Git 允许本地仓库对应多个远程仓库。
+
+首先创建一个空白的远程仓库，之后在本地仓库中执行：
+
+```bash
+git romote add xxx https://github.com/username/reponame
+git push -u xxx master    # 新增远程仓库
+git push -u origin master # 原有远程仓库
+```
 
 ## 如何为项目创建不同于全局性设置的用户信息
 
