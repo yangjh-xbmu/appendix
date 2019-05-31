@@ -21,5 +21,6 @@
   * [Docker 镜像的用法](docker/image.md)
   * [使用 Dockerfile 脚本创建镜像](docker/dockerfile.md)
 * [网站服务器搭建](server.md)
+* [MySQL](MySQL.md)
 * [Git-Ftp](gitftp.md)
 * [Pandoc](pandoc.md)
